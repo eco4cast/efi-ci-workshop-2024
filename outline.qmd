@@ -1,0 +1,25 @@
+---
+title: "Cyberinfrastructure for Efficient Ecological Forecasting"
+author: "Cameron Thompson"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-position: left
+---
+
+# Introduction
+
+# **Design Justice Principals**
+
+# **State-of-the-art Workflows**
+
+## **Examples**
+
+## **Best Practices**
+
+# Gaps, Barriers, and Challenges
+
+# Implementation and Coordination
+
+# **Common Vocabulary** 
