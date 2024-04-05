@@ -1,0 +1,171 @@
+---
+title: "Glossary"
+format: html
+author: "Cameron Thompson"
+---
+
+## 
+
+# Ecological Forecasting Cyberinfrastructure Terms
+
+## Abstraction
+
+The process of focusing on the design of the IT system architecture and how components relate to one another. *Reference: Fer et al., 2021.*
+
+## Accessibility
+
+Availability of software and data in a public location with complete metadata, and the protocols to use, install, implement, and employ them shared. *Reference: Fer et al., 2021.*
+
+## Algorithms
+
+A set of rules designed to solve a computational problem. *Reference: Fer et al., 2021.*
+
+## Application Programming Interfaces (APIs)
+
+Tools for programmatically interacting with data online. *Reference: Fer et al., 2021.*
+
+## Assistance for Land-surface Modelling activities (ALMA)
+
+A data convention that ensures consistency in naming, unit, and sign standards for variable exchange in model-data activities. *Reference: Fer et al., 2021.*
+
+## Benchmarking
+
+Assessing a model's skill based on a priori performance expectations. *Reference: Fer et al., 2021.*
+
+## Comma-separated values (CSV)
+
+Text files using commas to separate values. *Reference: Fer et al., 2021.*
+
+## Cyberinfrastructure
+
+IT systems with components for data storage and advanced informatics for simulating natural phenomena and scientific interpretation. *Reference: Fer et al., 2021.*
+
+## Data assimilation
+
+Combining model predictions with observations to update system understanding. *Reference: Fer et al., 2021.*
+
+## Database
+
+Electronic systems that store and organize data and metadata. *Reference: Fer et al., 2021.*
+
+## FAIR
+
+Findable, accessible, interoperable, and reusable. *Reference: Wilkinson et al., 2016, as cited in Dietze et al., 2023.*
+
+## Findability
+
+The ease of discovering data and software. *Reference: Fer et al., 2021.*
+
+## Internet of Things (IoT)
+
+Network of interconnected sensors and smart devices for automated environmental monitoring. *Reference: Fer et al., 2021.*
+
+## Interoperability
+
+The ability of software to work with other products. *Reference: Fer et al., 2021.*
+
+## Metadata
+
+Descriptive data providing documentation about other data or software. *Reference: Fer et al., 2021.*
+
+## Model Intercomparison Projects (MIPs)
+
+Multi-institutional efforts for model evaluation and benchmarking. *Reference: Fer et al., 2021.*
+
+## Network Common Data From (NetCDF)
+
+A file format for storing array-oriented scientific data and metadata. *Reference: Fer et al., 2021.*
+
+## Ontologies
+
+Standardized collections of terms. *Reference: Fer et al., 2021.*
+
+## Open file format
+
+A file format without restrictions on use by any software. *Reference: Fer et al., 2021.*
+
+## Provenance
+
+Historical information of all analysis steps and components. *Reference: Fer et al., 2021.*
+
+## Repository
+
+Online storage for hosting software and code with related documentation. *Reference: Fer et al., 2021.*
+
+## Reusability
+
+The versatility of data and software in different settings. *Reference: Fer et al., 2021.*
+
+## Scheduler
+
+Software for managing scientific workflows periodically. *Reference: Fer et al., 2021.*
+
+## Software container
+
+An application package with dependencies for code execution. *Reference: Fer et al., 2021.*
+
+## Workflow
+
+Computational tasks executed in sequence with data flow. *Reference: Fer et al., 2021.*
+
+## Virtual machines
+
+Software providing basic OS functionality in a contained environment. *Reference: Fer et al., 2021.*
+
+# Terms from Hendry 2023, "Prediction in Ecology and Evolution"
+
+## Hypothesis
+
+An expectation on system workings for testable predictions. *Reference: Hendry 2023.*
+
+## Prediction
+
+Formal assertion about a state or outcome before it is known. *Reference: Hendry 2023.*
+
+## Expectation
+
+A weaker form of prediction with higher uncertainty. *Reference: Hendry 2023.*
+
+## Question
+
+Inquiry about system information for generating predictions. *Reference: Hendry 2023.*
+
+## Predictable
+
+A precise and accurate state or outcome given adequate system knowledge. *Reference: Hendry 2023.*
+
+## Prophecy (prediction as ...)
+
+A formal prediction about the future state of a system. *Reference: Hendry 2023.*
+
+## Diagnosis (prediction as ...)
+
+A formal prediction about the current state of a system. *Reference: Hendry 2023.*
+
+## History (prediction as...)
+
+A formal prediction about the past state of a system. *Reference: Hendry 2023.*
+
+## Repeatability (prediction as ...)
+
+Phenomena that are repeatable could also be predictable with sufficient knowledge. *Reference: Hendry 2023.*
+
+## Fate (prediction as ...)
+
+When evidence suggests an outcome is inevitable. *Reference: Hendry 2023.*
+
+## Parallel or convergent (in the sense of evolution)
+
+Cases where evolution generates similar outcomes under similar conditions. *Reference: Hendry 2023.*
+
+## Forecasting
+
+Using past or present data to predict the future. *Reference: Hendry 2023.*
+
+## Hindcasting
+
+Using current or past data to predict another past state. *Reference: Hendry 2023.*
+
+## Uncertainty
+
+The level of confidence in a prediction or outcome test. *Reference: Hendry 2023.*
