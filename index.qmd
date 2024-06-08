@@ -8,34 +8,98 @@ format:
     toc-position: left
 ---
 
-# Introduction
+# EFI Cyberinfrastructure Workshop April 2024
 
-Content for introduction...
+![](images/DSC_7900.JPG)
 
-# Design Justice Principles
 
-Content for Design Justice Principles...
+The lack of widely accepted cyberinfrastructure (CI) design principles poses a major obstacle for researchers and organizations seeking to engage in ecological forecasting. In an effort to address these obstacles, a workshop convened forecasting researchers and CI experts from government, academia, industry, and NGOs to:
+1. Collate common CI practices currently used
+2. Identify CI needs and gaps
+3. Propose CI designs for various forecasting problems
 
-# State-of-the-art Workflows
+# Workshop Outcomes
 
-Content for State-of-the-art Workflows...
+An objective of the workshop was to create an open-access version-controlled online document. This document was envisioned as a community-developed handbook of CI design principles and recommended practices accessible to the workshop participants and the broader EFI community. The living document was to function as a comprehensive CI guide for both novice and experienced forecasters aligned with community-developed forecasting standards (Dietze et al. 2023).
 
-# Examples
+## [Briefing Paper](brief.qmd) <!-- Link to the briefing paper -->
 
-Content for examples...
+A 1500-word briefing paper has been prepared in lieu of the initially planned community-developed handbook of CI design principles. After collating the workshop materials and reviewing the workshop exit survey, it was apparent that the workshop discussions were held at a higher level than necessary to achieve the initial goal. At this higher non-technical level of discussion, there were existing design principles that participants agreed with, but there are nonetheless obstacles to implementation.
 
-# Best Practices
+The briefing paper outlines the necessity of cyberinfrastructure (CI) and highlights key thematic obstacles to implementation as identified in the workshop. Additionally, it includes recommendations derived from these themes. The target audience includes potential advocates in agencies, scientific societies, stakeholder groups, and boundary organizations who may not possess technical expertise but can recognize the need for CI. The broader EFI community and workshop participants are encouraged to comment on this briefing paper.
 
-Content for Best Practices...
+## [Step by Step Summary of Workshop](summary.qmd) <!-- Link to the summary -->
 
-# Gaps, Barriers, and Challenges
+The workshop's agenda was crafted to cover essential CI design topics recommended by the organizing committee for inclusion in the handbook and to gather valuable input from attendees. Throughout the workshop, we documented the presentations, breakout sessions, and plenary discussions meticulously through detailed notes and audio recording transcripts. These materials were subsequently reviewed and refined to ensure clarity and accuracy in preparation for summarization.
 
-Content for Gaps, Barriers, and Challenges...
+Each workshop session was summarized with the assistance of a Large Language Model AI specifically Claude 3 Opus. We provided the AI with the workshop's annotated agenda, transcripts of audio recordings, presentation slides, and notes along with specific instructions to generate detailed summaries. These instructions were iteratively fine-tuned to ensure the summaries met our standards. Finally, we carefully reviewed the summaries to ensure they accurately reflected the workshop's discussions. Special attention was given to common themes emerging from the breakout sessions which required deeper interpretation and analysis. The collation of those notes can be found in the following document which the community and workshop participants are encouraged to comment on.
 
-# Implementation and Coordination
+## [Appendix](EFI_CI_glossary.qmd) <!-- Link to the appendix -->
 
-Content for Implementation and Coordination...
+The appendix includes acronyms, a glossary of terms, references, and a list of named participants and their affiliations.
 
-# [Glossary](./docs/EFI_CI_glossary.html)
+# Workshop Organization, Agenda, and Participants
 
-Please see the [Glossary](./docs/EFI_CI_glossary.html) for terms and definitions used throughout this document.
+## Participants and Impressions
+
+The workshop participants included a diverse mix of 41 participants from various sectors. Federal agencies were well-represented with 19 participants from 6 different agencies including USGS, NOAA, and NASA. Academia contributed 12 participants from 11 different institutions with international representation from the Finnish Meteorological Institute. The private sector added 5 participants, while NGOs including IOOS regional associations represented the remainder.
+
+According to an exit survey of 28 participants prior to the workshop, the majority of attendees were slightly or moderately knowledgeable of ecological forecasting CI. Around 20% were very knowledgeable, and 7% were not at all knowledgeable. This makeup of participants influenced the scope of the topics covered, focusing more on higher level concepts and general design rather than the technical aspects of cyber infrastructure. Overall, the workshop was well received. It met participants' expectations, with the majority being ‘extremely satisfied’, although the lack of technical content was noted by several survey respondents.
+
+Reported knowledge gains from the workshop were significant. Participants increased their familiarity with the EFI initiative, NERACOOS, and ecological forecasting cyberinfrastructure in general. There was a strong gain in knowledge about the forecasting cyberinfrastructure of other organizations, increasing from 0% and 11% to 14% and 71% (very knowledgeable and moderately knowledgeable respectively). The strong satisfaction of participants with the workshop was underscored by strong agreement that the workshop facilitated effective collaboration, increased community engagement, and was considered a valuable use of time aligning well with personal goals. Moreover, interactions with workshop organizers and the efficacy of communications were particularly praised. Participants valued the chance to meet peers, learn from diverse CI use cases, and engage in discussions that spanned across multiple perspectives including those focusing on design justice principles. Recommendations for future workshops emphasized a desire for more hands-on experiences with cyberinfrastructure tools, deeper technical discussions, and enhanced skill-building sessions.
+
+## Organizers and Funders
+
+The workshop was co-hosted by EFI and the Northeastern Regional Association for Coastal Ocean Observing Systems (NERACOOS) in Portsmouth, New Hampshire. It was made possible through support from the National Oceanic and Atmospheric Administration/US IOOS, the National Aeronautics and Space Administration, the Northeastern Regional Association of Coastal Ocean Observing Systems, the Ecological Forecasting Initiative, and the U.S. Geological Survey.
+
+**Organizing Committee**: Jake Zwart (USGS), Hassan Moustahfid (NOAA), Chris Brown (University of Maryland), Jessica Burnett (NASA), Jake Kritzer (NERACOOS), Rob Cardeiro (NERACOOS), Cameron Thompson (NERACOOS), Emily Silva (NERACOOS), Caitlin Shanahan (NERACOOS), Jody Peters (University of Notre Dame), Mike Dietze (Boston University)
+
+## Agenda
+
+| Date     | Time                | Activity                                                                                             |
+|----------|---------------------|-----------------------------------------------------------------------------------------------------|
+| April 10 | 8:30 - 9:00 am      | Welcome Coffee & Tea                                                                                |
+|          | 9:00 - 10:00 am     | Overview of Workshop Goals and Why We Are Here <br> Leads: Workshop Organizing Committee             |
+|          | 10:00 - 11:00 am    | Design Justice Principles Primer <br> Lead: Sean Dorr, University of Minnesota                       |
+|          | 11:00 - 11:15 am    | Coffee and Tea Break                                                                                |
+|          | 11:15 - 12:00 pm    | Design Justice Principles Activity <br> Lead: Sean Dorr, University of Minnesota                     |
+|          | 12:00 - 12:10 pm    | Group Photo                                                                                        |
+|          | 12:10 - 1:30 pm     | Lunch                                                                                               |
+|          | 1:30 - 3:30 pm      | State-of-the-art Forecasting Workflows and Best Practices Presentations                              |
+|          |                     | - Istem Fer, Finnish Meteorological Institute: What could an operational agricultural forecasting CI look like? Field Observatory Network (FiON) model-data workflows and services |
+|          |                     | - David Watkins, U.S. Geological Survey: Forecasting infrastructure in context: lessons learned from greenfield forecasting projects |
+|          |                     | - Clarissa Anderson, University of California San Diego and Southern California Coastal Ocean Observing System: Development of a Harmful Algal Bloom (HAB) Data Assembly Center in support of a National HAB Observing Network |
+|          |                     | - Quinn Thomas, Virginia Tech, and Carl Boettiger, University of California Berkeley: Adventures from a million forecast march: community driven-CI for ecological forecasting |
+|          |                     | - Alexandra Kirk (virtual), National Aeronautics and Space Administration IMPACT: VEDA, an open-source open-science platform for Earth Observation data |
+|          |                     | - Renato Figueiredo, University of Florida: From FLARE to FaaSr: Towards Reusable Scalable Cross-Platform Cloud Native Workflows |
+|          | 3:30 - 3:45 pm      | Coffee and Tea Break                                                                                |
+|          | 3:45 - 5:00 pm      | Breakout Group Discussions: What are common best practices and current technical gaps?               |
+|          | 5:00 pm             | End of Day 1                                                                                        |
+| April 11 | 8:30 - 9:00 am      | Welcome Coffee & Tea                                                                                |
+|          | 9:00 - 9:10 am      | Recap of Day 1 and Overview of Day 2 <br> Lead: Jake Zwart                                           |
+|          | 9:10 - 10:15 am     | Gaps, Barriers, and Other Challenges Presentations                                                  |
+|          |                     | - Mike Dietze, Boston University                                                                     |
+|          |                     | - Marie Colton, Hydros LLC                                                                           |
+|          |                     | - David Scheurer, NOAA Ocean Service                                                                 |
+|          | 10:15 - 10:30 am    | Coffee & Tea Break                                                                                   |
+|          | 10:30 - 12:00 pm    | Breakout Group Discussions: Synthesize common gaps, barriers, and challenges                         |
+|          |                     | Recommendations for overcoming common gaps and barriers                                              |
+|          | 12:00 - 1:30 pm     | Lunch                                                                                               |
+|          | 1:30 - 3:00 pm      | Breakout Group Discussions: Propose generalized cyberinfrastructure design for ecological forecasting |
+|          | 3:00 - 3:15 pm      | Coffee & Tea Break                                                                                   |
+|          | 3:15 - 3:45 pm      | Report out on Proposed Generalized Cyberinfrastructure Design <br> Lead: Jake Zwart                  |
+|          | 3:45 - 4:00 pm      | Bio Break                                                                                           |
+|          | 4:00 - 5:00 pm      | Implementation and Coordination by Organizations and Agencies <br> Leads: Jessica Burnett and Christopher Brown <br> Panel discussion: |
+|          |                     | - Clarissa Anderson, UCSD & SCCOOS                                                                    |
+|          |                     | - Stinger Guala, NASA Earth Science Data Systems                                                      |
+|          |                     | - Marie Colton, Hydros LLC                                                                            |
+|          |                     | - David Scheurer, NOAA Ocean Service                                                                  |
+|          |                     | - Steve Marley, NOAA Satellite & Information Service                                                  |
+|          |                     | - Bruce Wilson, ORNL Distributed Active Archive Center                                                |
+|          | 5:00 pm             | End of Day 2                                                                                        |
+| April 12 | 8:30 - 9:00 am      | Welcome Coffee & Tea                                                                                |
+|          | 9:00 - 9:10 am      | Recap of Day 2 and Overview of Day 3 <br> Lead: Jake Zwart                                           |
+|          | 9:10 - 10:45 am     | Implementation and Coordination by Organizations and Agencies <br> Leads: Jessica Burnett and Christopher Brown <br> Breakout group discussions |
+|          | 10:45 - 11:00 am    | Coffee & Tea Break                                                                                   |
+|          | 11:00 - 11:45 am    | Report out on Implementation and Coordination <br> Leads: Jessica Burnett and Christopher Brown      |
+|          | 11:45 - 12:00 pm    | Closing Remarks and End of Workshop <br> Lead: Workshop organizing committee                         |
