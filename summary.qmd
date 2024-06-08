@@ -24,7 +24,7 @@ The main goals for this workshop are:
 
 The primary outcome will be a living online "CI handbook" hosted on GitHub's EFI organization synthesizing recommended practices. There is also potential for a future workshop on the research-to-operations gap.
 
-**Cameron Thompson** discussed the process for developing the CI handbook by synthesizing input and findings from presentations, discussions, breakouts and documentation at this workshop. He reviewed the [FAIR data principles](EFI_CI_glossary.qmd#fair-principles) (findable, accessible, interoperable, reusable) and introduced the [CARE principles](EFI_CI_glossary.qmd#care-principles) (collective benefit, authority to control, responsibility, ethics) which extend data governance considerations to indigenous data sovereignty. An interactive poll using PollEverywhere asked participants to define the boundary between "small" and "medium" size ecological forecasts to explore establishing a common vocabulary.
+**Cameron Thompson** discussed the process for developing the CI handbook by synthesizing input and findings from presentations, discussions, breakouts and documentation at this workshop. He reviewed the [FAIR data principles](EFI_CI_glossary.html#fair-principles) (findable, accessible, interoperable, reusable) and introduced the [CARE principles](EFI_CI_glossary.html#care-principles) (collective benefit, authority to control, responsibility, ethics) which extend data governance considerations to indigenous data sovereignty. An interactive poll using PollEverywhere asked participants to define the boundary between "small" and "medium" size ecological forecasts to explore establishing a common vocabulary.
 
 ### Design Justice Principles
 
