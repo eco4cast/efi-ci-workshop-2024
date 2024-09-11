@@ -4,6 +4,7 @@ project:
   render:
     - "*.qmd"
     - "*.md"
+  base-url: /efi-ci-workshop-2024/ 
   output-dir: _site  # Where rendered site files go
 
 format:
