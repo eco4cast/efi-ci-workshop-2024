@@ -42,6 +42,7 @@ jobs:
       uses: quarto-dev/quarto-actions/publish@v2
       with:
         target: gh-pages
+        publish_dir: ./docs
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
