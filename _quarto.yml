@@ -4,6 +4,7 @@ project:
   render:
     - "*.qmd"
     - "*.md"
+  output-dir: _site  # Where rendered site files go
 
 format:
   html:
@@ -38,9 +39,4 @@ website:
       title: "Reference"
       contents:
         - reference/EFI_CI_reference.qmd
-
-# Deployment settings
-project:
-  output-dir: _site  # Where rendered site files go
-  preview: true  # Use Quarto's preview function for local development
 
