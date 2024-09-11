@@ -29,13 +29,19 @@ jobs:
 #         Rscript -e 'install.packages("quarto", lib = "/tmp")' # Install quarto in /tmp
 #         Rscript -e '.libPaths(c("/tmp", .libPaths())); library(quarto)' # Set library path
       
-    - name: Render Quarto Project
-      run: quarto render
+    # - name: Render Quarto Project
+    #   run: quarto render
+    # 
+    # - name: Deploy to GitHub Pages
+    #   uses: peaceiris/actions-gh-pages@v4
+    #   with:
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #     cname: projects.ecoforecast.org  
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
+    - name: Render and Publish
+      uses: quarto-dev/quarto-actions/publish@v2
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site  
-        cname: projects.ecoforecast.org  
+        target: gh-pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
