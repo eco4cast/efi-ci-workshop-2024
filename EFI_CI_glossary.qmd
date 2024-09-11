@@ -40,16 +40,17 @@ author: "Cameron Thompson"
 ### Design Justice Principles
 (Retrieved from [Design Justice Network](https://designjustice.org/read-the-principles))
 
-- We use design to sustain, heal, and empower our communities as well as to seek liberation from exploitative and oppressive systems.
-- We center the voices of those who are directly impacted by the outcomes of the design process.
-- We prioritize design’s impact on the community over the intentions of the designer.
-- We view change as emergent from an accountable, accessible, and collaborative process rather than as a point at the end of a process.
-- We see the role of the designer as a facilitator rather than an expert.
-- We believe that everyone is an expert based on their own lived experiences and that we all have unique and brilliant contributions to bring to a design process.
-- We share design knowledge and tools with our communities.
-- We work towards sustainable, community-led, and community-controlled outcomes.
-- We work towards non-exploitative solutions that reconnect us to the earth and to each other.
-- Before seeking new design solutions, we look for what is already working at the community level.
+1. We use design to sustain, heal, and empower our communities as well as to seek liberation from exploitative and oppressive systems.
+2. We center the voices of those who are directly impacted by the outcomes of the design process.
+3. We prioritize design’s impact on the community over the intentions of the designer.
+4. We view change as emergent from an accountable, accessible, and collaborative process rather than as a point at the end of a process.
+5. We see the role of the designer as a facilitator rather than an expert.
+6. We believe that everyone is an expert based on their own lived experiences and that we all have unique and brilliant contributions to bring to a design process.
+7. We share design knowledge and tools with our communities.
+8. We work towards sustainable, community-led, and community-controlled outcomes.
+9. We work towards non-exploitative solutions that reconnect us to the earth and to each other.
+10. Before seeking new design solutions, we look for what is already working at the community level.
+
 
 ### CARE Principles
 
