@@ -4,7 +4,7 @@ project:
   render:
     - "*.qmd"
     - "*.md"
-  output-dir: _site  # Where rendered site files go
+  output-dir: docs
 
 format:
   html:
