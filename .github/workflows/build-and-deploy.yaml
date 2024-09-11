@@ -24,7 +24,8 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get install -y pandoc libxml2-dev
-        Rscript -e 'if (!requireNamespace("quarto")) install.packages("quarto")'
+        Rscript -e 'install.packages("quarto", lib = "/tmp")' # Install quarto in /tmp
+        Rscript -e '.libPaths(c("/tmp", .libPaths())); library(quarto)' # Set library path
       
     - name: Render Quarto Project
       run: quarto render
