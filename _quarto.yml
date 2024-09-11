@@ -4,7 +4,6 @@ project:
   render:
     - "*.qmd"
     - "*.md"
-  base-url: /efi-ci-workshop-2024/ 
   output-dir: _site  # Where rendered site files go
 
 format:
@@ -17,6 +16,7 @@ format:
 
 website:
   favicon: images/EFI_Logo-1.jpg
+  site-url: /efi-ci-workshop-2024/
   repo-url: https://github.com/eco4cast/efi-ci-workshop-2024
   repo-actions: [edit, issue]
   navbar:
