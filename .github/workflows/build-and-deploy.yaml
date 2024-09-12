@@ -12,12 +12,18 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      
     steps:
+    - run: git config --system --add safe.directory '*'
+
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
       with:
         ref: main
+        fetch-depth: 0
+        set-safe-directory: '*'
 
     - name: Set up Quarto
       uses: quarto-dev/quarto-actions/setup@v2
