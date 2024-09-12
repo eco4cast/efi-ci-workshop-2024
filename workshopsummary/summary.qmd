@@ -1,5 +1,5 @@
 ---
-title: "EFI Cyberinfrastructure Workshop Summary"
+title: "EFI-CI Workshop Summary"
 author: "Cameron Thompson"
 format: html
 ---

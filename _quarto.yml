@@ -1,0 +1,43 @@
+project:
+  type: website
+  title: Cyberinfrastructure for Efficient Ecological Forecasting
+  render:
+    - "*.qmd"
+    - "*.md"
+  output-dir: docs
+
+format:
+  html:
+    theme: "zephyr"
+    toc: true
+    from: markdown+emoji
+    bibliography: references.bibtex
+    lightbox: auto
+
+website:
+  favicon: images/EFI_Logo-1.jpg
+  site-url: https://projects.ecoforecast.org/efi-ci-workshop-2024/
+  repo-url: https://github.com/eco4cast/efi-ci-workshop-2024
+  repo-actions: [edit, issue]
+  navbar:
+    background: primary
+    search: true
+    left:
+      - sidebar:workshop-summary
+      - sidebar:reference
+
+  sidebar:
+    - id: workshop-summary
+      title: "Workshop Summary"
+      style: "docked"
+      background: light
+      collapse-level: 2
+      contents:
+        - workshopsummary/summary.qmd
+        - workshopsummary/brief.qmd
+
+    - id: reference
+      title: "Reference"
+      contents:
+        - reference/EFI_CI_reference.qmd
+

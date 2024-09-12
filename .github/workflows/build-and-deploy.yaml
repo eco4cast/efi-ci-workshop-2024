@@ -17,7 +17,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        ref: revamp-organization
+        ref: main
 
     - name: Set up Quarto
       uses: quarto-dev/quarto-actions/setup@v2
@@ -36,5 +36,4 @@ jobs:
         git add .
         git commit -a -m "update pages" || echo "nothing to commit"
         git push https://${GITHUB_PAT}:${GITHUB_PAT}@github.com/${GITHUB_REPOSITORY} gh-pages
-
         
