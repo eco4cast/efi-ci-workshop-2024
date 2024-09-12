@@ -21,28 +21,18 @@ jobs:
 
     - name: Set up Quarto
       uses: quarto-dev/quarto-actions/setup@v2
-      
-# only need if using R analyses in quarto 
-#     - name: Install dependencies
-#       run: |
-#         sudo apt-get install -y pandoc libxml2-dev
-#         Rscript -e 'install.packages("quarto", lib = "/tmp")' # Install quarto in /tmp
-#         Rscript -e '.libPaths(c("/tmp", .libPaths())); library(quarto)' # Set library path
-      
-    # - name: Render Quarto Project
-    #   run: quarto render
-    # 
-    # - name: Deploy to GitHub Pages
-    #   uses: peaceiris/actions-gh-pages@v4
-    #   with:
-    #     github_token: ${{ secrets.GITHUB_TOKEN }}
-    #     cname: projects.ecoforecast.org  
 
-    - name: Render and Publish
-      uses: quarto-dev/quarto-actions/publish@v2
-      with:
-        target: gh-pages
-        publish_dir: ./docs
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Render
+      run: |
+        quarto render
 
+    - name: Publish
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git checkout gh-pages
+        cp -r docs/* .
+        git add .
+        git commit -a -m "update pages" || echo "nothing to commit"
+        git push https://${GITHUB_PAT}:${GITHUB_PAT}@github.com/${GITHUB_REPOSITORY}
+        
