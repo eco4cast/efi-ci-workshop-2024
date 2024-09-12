@@ -17,6 +17,8 @@ jobs:
     container: eco4cast/rocker-neon4cast:latest
       
     steps:
+    - run: git config --global --add safe.directory /__w/efi-ci-workshop-2024/efi-ci-workshop-2024
+    
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
