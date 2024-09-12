@@ -12,37 +12,169 @@ format:
 
 ![](images/DSC_7900.JPG)
 
-The lack of widely accepted cyberinfrastructure (CI) design principles poses a major obstacle for researchers and organizations seeking to engage in ecological forecasting. In an effort to address these obstacles, a workshop convened forecasting researchers and CI experts from government, academia, industry, and NGOs to: 1. Collate common CI practices currently used 2. Identify CI needs and gaps 3. Propose CI designs for various forecasting problems
+The lack of widely accepted cyberinfrastructure (CI) design principles poses a major obstacle for researchers and organizations seeking to engage in ecological forecasting. In an effort to address these obstacles, a workshop convened forecasting researchers and CI experts from government, academia, industry, and NGOs to:
+
+1. **Collate** common CI practices currently used  
+2. **Identify** CI needs and gaps  
+3. **Propose** CI designs for various forecasting problems
+
 
 # Workshop Outcomes
 
-An objective of the workshop was to create an open-access version-controlled online document. This document was envisioned as a community-developed handbook of CI design principles and recommended practices accessible to the workshop participants and the broader EFI community. The living document was to function as a comprehensive CI guide for both novice and experienced forecasters aligned with community-developed forecasting standards [@dietze2023community].
+An objective of the workshop was to create an open-access version-controlled online document. This document was envisioned as a community-developed handbook of CI design principles and recommended practices accessible to the workshop participants and the broader Ecological Forecasting Initiative (EFI) community. The living document is to function as a comprehensive CI guide for both novice and experienced forecasters aligned with community-developed forecasting standards [@dietze2023community].
 
-## [Briefing Paper](workshopsummary/brief.qmd) <!-- Link to the briefing paper -->
+# How to Contribute
 
-A 1500-word briefing paper has been prepared in lieu of the initially planned community-developed handbook of CI design principles. After collating the workshop materials and reviewing the workshop exit survey, it was apparent that the workshop discussions were held at a higher level than necessary to achieve the initial goal. At this higher non-technical level of discussion, there were existing design principles that participants agreed with, but there are nonetheless obstacles to implementation.
+This repository is a collaborative space for the EFI community to design, discuss, and refine cyberinfrastructure (CI) for ecological forecasting. We welcome contributions from all backgrounds and levels of experience.
 
-The briefing paper outlines the necessity of cyberinfrastructure (CI) and highlights key thematic obstacles to implementation as identified in the workshop. Additionally, it includes recommendations derived from these themes. The target audience includes potential advocates in agencies, scientific societies, stakeholder groups, and boundary organizations who may not possess technical expertise but can recognize the need for CI. The broader EFI community and workshop participants are encouraged to comment on this briefing paper.
+We are using [Quarto](https://quarto.org/) and [GitHub Actions](https://docs.github.com/en/actions) to manage
+the deployment of the site. This allows contributors to write pages in
+[Markdown](https://www.markdownguide.org/getting-started/) using
+familiar tools such as RStudio, Jupyter, or Visual Studio Code -
+focusing on the substance of the writing rather than worrying about
+styling or website deployment.
 
-## [Step by Step Summary of Workshop](workshopsummary/summary.qmd) <!-- Link to the summary -->
+## Getting Started
+
+### Prerequisites
+
+Before you start, you will need:
+
+- A GitHub account. You can sign up for one [here](https://github.com/join).
+- Git installed on your computer. Follow the instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to install Git.
+- Basic knowledge of Git and GitHub. If you're new to these, we recommend this [tutorial](https://docs.github.com/en/get-started/start-your-journey/hello-world).
+
+### Installation
+
+1. **Fork the repository**
+
+   Click the "Fork" button at the top right of this page to create a copy of this repository under your GitHub account.
+
+2. **Clone your fork**
+
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/efi-ci-workshop-2024.git
+   ```
+   
+3. **Navigate to the repository directory**
+
+   ```bash
+    cd efi-ci-workshop-2024
+   ```
+   
+4. **Create a new branch**
+
+   ```bash
+   git checkout -b your-branch-name
+   ```
+
+## Contributing
+
+1. **Find an issue or task**
+
+   Check the [Issues](https://github.com/eco4cast/efi-ci-workshop-2024/issues) tab to find tasks that need to be completed or discussions that need your input. You can also create new issues or suggest improvements.
+
+2. **Work on your task**
+
+   Once you've selected an issue or task, start working on it in your forked repository. Make sure to keep your changes focused and relevant to the task at hand.
+   
+3. **Preview the website**
+
+   (Optional) To preview your changes locally, all you need is a quarto
+installation. 
+
+   There are many ways to work with quarto. The Quarto project website
+has [specific documentation](https://quarto.org/docs/get-started/)
+for how to install quarto for RStudio, Jupyter, VS Code, and more.
+Once you have quarto installed, you can preview your content in your
+tool of choice:
+
+::: panel-tabset
+## RStudio
+
+Open the RStudio project file in the repo. Now you can render and
+preview the site with `quarto::quarto_preview()`. RStudio will pop
+up a web browser to preview the site. As you edit files, you can
+click the "Render on Save" checkbox, and the website will be updated
+whenever you save a change to them.
+
+## Shell / Text Editor
+
+If you're working with lower-level tools like bash and vim, you can
+render the site at the shell and start up a preview server with
+
+``` bash
+quarto render
+quarto preview
+```
+
+The `quarto preview` command should open a web page to the correct
+location. If it does not, you can see the URL to go to in the
+command's output.
+
+## VS Code
+
+Within VS Code install the [Quarto extension](https://marketplace.visualstudio.com/items?itemName=quarto.quarto).
+
+To render the site:  
+`Ctrl+Shift+K` on PC or `Cmd+Shift+K` on mac. Althernatively, there is a 'Quarto:Preview' button (![preview icon](https://quarto.org/docs/tools/images/vscode-preview-icon.svg)) in the upper right-hand corner that will build the page. 
+
+To execute a single code cell within a qmd:  
+`Ctrl+Shift+Enter` on PC or `Cmd+Shift+Enter` on mac.
+
+To close a preview session press `Ctrl+C` on PC or `Cmd+C` on a mac.
+
+:::
+
+
+4. **Commit your changes** 
+
+   ```bash
+   git add .
+   git commit -m "Brief description of your changes"
+   ``` 
+   
+5. **Push your changes to your fork** 
+
+   ```bash
+   git push origin your-branch-name
+   ```
+   
+6. **Create a Pull Request**
+
+   Go to your forked repository on GitHub, and you should see a "Compare & pull request" button. Click it and follow the instructions to submit your pull request.
+   
+7. **Get a review** 
+
+   You can tag someone in particular to review the content you're proposing to add; if you don't tag anyone in particular, one of the repository maintainers will review your PR. 
+
+### Citations
+
+Citations are just like if you were using bibtex to write a paper. Add
+your citation to the `references.bibtex`. Then cite in the page text.
+For example, you could cite the Ecological Forecasting Standards with markdown like
+`[@dietze2023community]` [@dietze2023community]. For more information, see the
+[quarto help page on citations and
+footnotes](https://quarto.org/docs/authoring/footnotes-and-citations.html).
+
+
+## Current documents 
+
+### [Step by Step Summary of Workshop](workshopsummary/summary.qmd) <!-- Link to the summary -->
 
 The workshop's agenda was crafted to cover essential CI design topics recommended by the organizing committee for inclusion in the handbook and to gather valuable input from attendees. Throughout the workshop, we documented the presentations, breakout sessions, and plenary discussions meticulously through detailed notes and audio recording transcripts. These materials were subsequently reviewed and refined to ensure clarity and accuracy in preparation for summarization.
 
 Each workshop session was summarized with the assistance of a Large Language Model AI specifically Claude 3 Opus. We provided the AI with the workshop's annotated agenda, transcripts of audio recordings, presentation slides, and notes along with specific instructions to generate detailed summaries. These instructions were iteratively fine-tuned to ensure the summaries met our standards. Finally, we carefully reviewed the summaries to ensure they accurately reflected the workshop's discussions. Special attention was given to common themes emerging from the breakout sessions which required deeper interpretation and analysis. The collation of those notes can be found in the following document which the community and workshop participants are encouraged to comment on.
 
-## [Appendix](reference/EFI_CI_reference.qmd) <!-- Link to the appendix -->
+### [Briefing Paper](workshopsummary/brief.qmd) <!-- Link to the briefing paper -->
 
-The appendix includes acronyms, a glossary of terms, references, and a list of named participants and their affiliations.
+A 1500-word briefing paper has been prepared in lieu of the initially planned community-developed handbook of CI design principles. After collating the workshop materials and reviewing the workshop exit survey, it was apparent that the workshop discussions were held at a higher level than necessary to achieve the initial goal. At this higher non-technical level of discussion, there were existing design principles that participants agreed with, but there are nonetheless obstacles to implementation.
 
-# Workshop Organization, Agenda, and Participants
+The briefing paper outlines the necessity of cyberinfrastructure (CI) and highlights key thematic obstacles to implementation as identified in the workshop. Additionally, it includes recommendations derived from these themes. The target audience includes potential advocates in agencies, scientific societies, stakeholder groups, and boundary organizations who may not possess technical expertise but can recognize the need for CI. The broader EFI community and workshop participants are encouraged to comment on this briefing paper.
 
-## Participants and Impressions
+### [Appendix](reference/EFI_CI_reference.qmd) <!-- Link to the appendix -->
 
-The workshop participants included a diverse mix of 41 participants from various sectors. Federal agencies were well-represented with 19 participants from 6 different agencies including USGS, NOAA, and NASA. Academia contributed 12 participants from 11 different institutions with international representation from the Finnish Meteorological Institute. The private sector added 5 participants, while NGOs including IOOS regional associations represented the remainder.
-
-According to an exit survey of 28 participants prior to the workshop, the majority of attendees were slightly or moderately knowledgeable of ecological forecasting CI. Around 20% were very knowledgeable, and 7% were not at all knowledgeable. This makeup of participants influenced the scope of the topics covered, focusing more on higher level concepts and general design rather than the technical aspects of cyber infrastructure. Overall, the workshop was well received. It met participants' expectations, with the majority being 'extremely satisfied', although the lack of technical content was noted by several survey respondents.
-
-Reported knowledge gains from the workshop were significant. Participants increased their familiarity with the EFI initiative, NERACOOS, and ecological forecasting cyberinfrastructure in general. There was a strong gain in knowledge about the forecasting cyberinfrastructure of other organizations, increasing from 0% and 11% to 14% and 71% (very knowledgeable and moderately knowledgeable respectively). The strong satisfaction of participants with the workshop was underscored by strong agreement that the workshop facilitated effective collaboration, increased community engagement, and was considered a valuable use of time aligning well with personal goals. Moreover, interactions with workshop organizers and the efficacy of communications were particularly praised. Participants valued the chance to meet peers, learn from diverse CI use cases, and engage in discussions that spanned across multiple perspectives including those focusing on design justice principles. Recommendations for future workshops emphasized a desire for more hands-on experiences with cyberinfrastructure tools, deeper technical discussions, and enhanced skill-building sessions.
+The appendix includes acronyms, a glossary of terms, and a list of named participants and their affiliations.
 
 ## Organizers and Funders
 
@@ -50,52 +182,3 @@ The workshop was co-hosted by EFI and the Northeastern Regional Association for 
 
 **Organizing Committee**: Jake Zwart (USGS), Hassan Moustahfid (NOAA), Chris Brown (University of Maryland), Jessica Burnett (NASA), Jake Kritzer (NERACOOS), Rob Cardeiro (NERACOOS), Cameron Thompson (NERACOOS), Emily Silva (NERACOOS), Caitlin Shanahan (NERACOOS), Jody Peters (University of Notre Dame), Mike Dietze (Boston University)
 
-## Agenda
-
-| Date     | Time             | Activity                                                                                                                                                                                                                        |
-|------------|------------|-----------------------------------------------|
-| April 10 | 8:30 - 9:00 am   | Welcome Coffee & Tea                                                                                                                                                                                                            |
-|          | 9:00 - 10:00 am  | Overview of Workshop Goals and Why We Are Here <br> Leads: Workshop Organizing Committee                                                                                                                                        |
-|          | 10:00 - 11:00 am | Design Justice Principles Primer <br> Lead: Sean Dorr, University of Minnesota                                                                                                                                                  |
-|          | 11:00 - 11:15 am | Coffee and Tea Break                                                                                                                                                                                                            |
-|          | 11:15 - 12:00 pm | Design Justice Principles Activity <br> Lead: Sean Dorr, University of Minnesota                                                                                                                                                |
-|          | 12:00 - 12:10 pm | Group Photo                                                                                                                                                                                                                     |
-|          | 12:10 - 1:30 pm  | Lunch                                                                                                                                                                                                                           |
-|          | 1:30 - 3:30 pm   | State-of-the-art Forecasting Workflows and Best Practices Presentations                                                                                                                                                         |
-|          |                  | \- Istem Fer, Finnish Meteorological Institute: What could an operational agricultural forecasting CI look like? Field Observatory Network (FiON) model-data workflows and services                                             |
-|          |                  | \- David Watkins, U.S. Geological Survey: Forecasting infrastructure in context: lessons learned from greenfield forecasting projects                                                                                           |
-|          |                  | \- Clarissa Anderson, University of California San Diego and Southern California Coastal Ocean Observing System: Development of a Harmful Algal Bloom (HAB) Data Assembly Center in support of a National HAB Observing Network |
-|          |                  | \- Quinn Thomas, Virginia Tech, and Carl Boettiger, University of California Berkeley: Adventures from a million forecast march: community driven-CI for ecological forecasting                                                 |
-|          |                  | \- Alexandra Kirk (virtual), National Aeronautics and Space Administration IMPACT: VEDA, an open-source open-science platform for Earth Observation data                                                                        |
-|          |                  | \- Renato Figueiredo, University of Florida: From FLARE to FaaSr: Towards Reusable Scalable Cross-Platform Cloud Native Workflows                                                                                               |
-|          | 3:30 - 3:45 pm   | Coffee and Tea Break                                                                                                                                                                                                            |
-|          | 3:45 - 5:00 pm   | Breakout Group Discussions: What are common best practices and current technical gaps?                                                                                                                                          |
-|          | 5:00 pm          | End of Day 1                                                                                                                                                                                                                    |
-| April 11 | 8:30 - 9:00 am   | Welcome Coffee & Tea                                                                                                                                                                                                            |
-|          | 9:00 - 9:10 am   | Recap of Day 1 and Overview of Day 2 <br> Lead: Jake Zwart                                                                                                                                                                      |
-|          | 9:10 - 10:15 am  | Gaps, Barriers, and Other Challenges Presentations                                                                                                                                                                              |
-|          |                  | \- Mike Dietze, Boston University                                                                                                                                                                                               |
-|          |                  | \- Marie Colton, Hydros LLC                                                                                                                                                                                                     |
-|          |                  | \- David Scheurer, NOAA Ocean Service                                                                                                                                                                                           |
-|          | 10:15 - 10:30 am | Coffee & Tea Break                                                                                                                                                                                                              |
-|          | 10:30 - 12:00 pm | Breakout Group Discussions: Synthesize common gaps, barriers, and challenges                                                                                                                                                    |
-|          |                  | Recommendations for overcoming common gaps and barriers                                                                                                                                                                         |
-|          | 12:00 - 1:30 pm  | Lunch                                                                                                                                                                                                                           |
-|          | 1:30 - 3:00 pm   | Breakout Group Discussions: Propose generalized cyberinfrastructure design for ecological forecasting                                                                                                                           |
-|          | 3:00 - 3:15 pm   | Coffee & Tea Break                                                                                                                                                                                                              |
-|          | 3:15 - 3:45 pm   | Report out on Proposed Generalized Cyberinfrastructure Design <br> Lead: Jake Zwart                                                                                                                                             |
-|          | 3:45 - 4:00 pm   | Bio Break                                                                                                                                                                                                                       |
-|          | 4:00 - 5:00 pm   | Implementation and Coordination by Organizations and Agencies <br> Leads: Jessica Burnett and Christopher Brown <br> Panel discussion:                                                                                          |
-|          |                  | \- Clarissa Anderson, UCSD & SCCOOS                                                                                                                                                                                             |
-|          |                  | \- Stinger Guala, NASA Earth Science Data Systems                                                                                                                                                                               |
-|          |                  | \- Marie Colton, Hydros LLC                                                                                                                                                                                                     |
-|          |                  | \- David Scheurer, NOAA Ocean Service                                                                                                                                                                                           |
-|          |                  | \- Steve Marley, NOAA Satellite & Information Service                                                                                                                                                                           |
-|          |                  | \- Bruce Wilson, ORNL Distributed Active Archive Center                                                                                                                                                                         |
-|          | 5:00 pm          | End of Day 2                                                                                                                                                                                                                    |
-| April 12 | 8:30 - 9:00 am   | Welcome Coffee & Tea                                                                                                                                                                                                            |
-|          | 9:00 - 9:10 am   | Recap of Day 2 and Overview of Day 3 <br> Lead: Jake Zwart                                                                                                                                                                      |
-|          | 9:10 - 10:45 am  | Implementation and Coordination by Organizations and Agencies <br> Leads: Jessica Burnett and Christopher Brown <br> Breakout group discussions                                                                                 |
-|          | 10:45 - 11:00 am | Coffee & Tea Break                                                                                                                                                                                                              |
-|          | 11:00 - 11:45 am | Report out on Implementation and Coordination <br> Leads: Jessica Burnett and Christopher Brown                                                                                                                                 |
-|          | 11:45 - 12:00 pm | Closing Remarks and End of Workshop <br> Lead: Workshop organizing committee                                                                                                                                                    |
