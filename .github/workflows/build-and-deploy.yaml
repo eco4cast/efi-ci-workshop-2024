@@ -15,9 +15,6 @@ jobs:
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       
-    steps:
-    - run: git config --system --add safe.directory '*'
-
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
