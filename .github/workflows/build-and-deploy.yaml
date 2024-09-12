@@ -30,11 +30,7 @@ jobs:
       run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
-        git stash  # Stash untracked changes to prevent conflicts during checkout
-        git fetch origin gh-pages  # Fetch the latest gh-pages branch
         git checkout gh-pages || git checkout --orphan gh-pages  # Checkout or create the gh-pages branch
-        git stash pop || echo "Nothing to stash"  # Reapply the stashed changes, if any
-        git pull origin gh-pages --rebase  # Pull the latest changes and rebase to avoid conflicts
         cp -r docs/* .  # Copy files to the root directory
         git add .
         git commit -a -m "update pages" || echo "nothing to commit"  # Commit changes
