@@ -25,14 +25,16 @@ jobs:
     - name: Render
       run: |
         quarto render
-
+        
     - name: Publish
       run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
-        git checkout gh-pages
+        git fetch origin gh-pages  # Fetch the gh-pages branch
+        git checkout gh-pages || git checkout --orphan gh-pages  # Try to checkout or create if not exist
         cp -r docs/* .
         git add .
         git commit -a -m "update pages" || echo "nothing to commit"
-        git push https://${GITHUB_PAT}:${GITHUB_PAT}@github.com/${GITHUB_REPOSITORY}
+        git push https://${GITHUB_PAT}:${GITHUB_PAT}@github.com/${GITHUB_REPOSITORY} gh-pages
+
         
