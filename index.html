@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -128,7 +162,7 @@ div.csl-indent {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-reference">    
         <li>
     <a class="dropdown-item" href="./reference/EFI_CI_reference.html" rel="" target="">
- <span class="dropdown-text">Appendix: Acronyms, Terms, People, and References</span></a>
+ <span class="dropdown-text">Reference: Acronyms, Definitions, and People</span></a>
   </li>  
     </ul>
   </li>
@@ -149,17 +183,25 @@ div.csl-indent {
    
   <ul>
   <li><a href="#efi-cyberinfrastructure-workshop-april-2024" id="toc-efi-cyberinfrastructure-workshop-april-2024" class="nav-link active" data-scroll-target="#efi-cyberinfrastructure-workshop-april-2024">EFI Cyberinfrastructure Workshop April 2024</a></li>
-  <li><a href="#workshop-outcomes" id="toc-workshop-outcomes" class="nav-link" data-scroll-target="#workshop-outcomes">Workshop Outcomes</a>
+  <li><a href="#workshop-outcomes" id="toc-workshop-outcomes" class="nav-link" data-scroll-target="#workshop-outcomes">Workshop Outcomes</a></li>
+  <li><a href="#how-to-contribute" id="toc-how-to-contribute" class="nav-link" data-scroll-target="#how-to-contribute">How to Contribute</a>
   <ul class="collapse">
-  <li><a href="#briefing-paper" id="toc-briefing-paper" class="nav-link" data-scroll-target="#briefing-paper">Briefing Paper <!-- Link to the briefing paper --></a></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a>
+  <ul class="collapse">
+  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
+  <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation">Installation</a></li>
+  </ul></li>
+  <li><a href="#contributing" id="toc-contributing" class="nav-link" data-scroll-target="#contributing">Contributing</a>
+  <ul class="collapse">
+  <li><a href="#citations" id="toc-citations" class="nav-link" data-scroll-target="#citations">Citations</a></li>
+  </ul></li>
+  <li><a href="#current-documents" id="toc-current-documents" class="nav-link" data-scroll-target="#current-documents">Current documents</a>
+  <ul class="collapse">
   <li><a href="#step-by-step-summary-of-workshop" id="toc-step-by-step-summary-of-workshop" class="nav-link" data-scroll-target="#step-by-step-summary-of-workshop">Step by Step Summary of Workshop <!-- Link to the summary --></a></li>
+  <li><a href="#briefing-paper" id="toc-briefing-paper" class="nav-link" data-scroll-target="#briefing-paper">Briefing Paper <!-- Link to the briefing paper --></a></li>
   <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix <!-- Link to the appendix --></a></li>
   </ul></li>
-  <li><a href="#workshop-organization-agenda-and-participants" id="toc-workshop-organization-agenda-and-participants" class="nav-link" data-scroll-target="#workshop-organization-agenda-and-participants">Workshop Organization, Agenda, and Participants</a>
-  <ul class="collapse">
-  <li><a href="#participants-and-impressions" id="toc-participants-and-impressions" class="nav-link" data-scroll-target="#participants-and-impressions">Participants and Impressions</a></li>
   <li><a href="#organizers-and-funders" id="toc-organizers-and-funders" class="nav-link" data-scroll-target="#organizers-and-funders">Organizers and Funders</a></li>
-  <li><a href="#agenda" id="toc-agenda" class="nav-link" data-scroll-target="#agenda">Agenda</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/eco4cast/efi-ci-workshop-2024/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/eco4cast/efi-ci-workshop-2024/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -193,282 +235,118 @@ div.csl-indent {
 <section id="efi-cyberinfrastructure-workshop-april-2024" class="level1">
 <h1>EFI Cyberinfrastructure Workshop April 2024</h1>
 <p><img src="images/DSC_7900.JPG" class="img-fluid"></p>
-<p>The lack of widely accepted cyberinfrastructure (CI) design principles poses a major obstacle for researchers and organizations seeking to engage in ecological forecasting. In an effort to address these obstacles, a workshop convened forecasting researchers and CI experts from government, academia, industry, and NGOs to: 1. Collate common CI practices currently used 2. Identify CI needs and gaps 3. Propose CI designs for various forecasting problems</p>
+<p>The lack of widely accepted cyberinfrastructure (CI) design principles poses a major obstacle for researchers and organizations seeking to engage in ecological forecasting. In an effort to address these obstacles, a workshop convened forecasting researchers and CI experts from government, academia, industry, and NGOs to:</p>
+<ol type="1">
+<li><strong>Collate</strong> common CI practices currently used<br>
+</li>
+<li><strong>Identify</strong> CI needs and gaps<br>
+</li>
+<li><strong>Propose</strong> CI designs for various forecasting problems</li>
+</ol>
 </section>
 <section id="workshop-outcomes" class="level1">
 <h1>Workshop Outcomes</h1>
-<p>An objective of the workshop was to create an open-access version-controlled online document. This document was envisioned as a community-developed handbook of CI design principles and recommended practices accessible to the workshop participants and the broader EFI community. The living document was to function as a comprehensive CI guide for both novice and experienced forecasters aligned with community-developed forecasting standards <span class="citation" data-cites="dietze2023community">(<a href="#ref-dietze2023community" role="doc-biblioref">Dietze et al. 2023</a>)</span>.</p>
-<section id="briefing-paper" class="level2">
-<h2 class="anchored" data-anchor-id="briefing-paper"><a href="./workshopsummary/brief.html">Briefing Paper</a> <!-- Link to the briefing paper --></h2>
-<p>A 1500-word briefing paper has been prepared in lieu of the initially planned community-developed handbook of CI design principles. After collating the workshop materials and reviewing the workshop exit survey, it was apparent that the workshop discussions were held at a higher level than necessary to achieve the initial goal. At this higher non-technical level of discussion, there were existing design principles that participants agreed with, but there are nonetheless obstacles to implementation.</p>
-<p>The briefing paper outlines the necessity of cyberinfrastructure (CI) and highlights key thematic obstacles to implementation as identified in the workshop. Additionally, it includes recommendations derived from these themes. The target audience includes potential advocates in agencies, scientific societies, stakeholder groups, and boundary organizations who may not possess technical expertise but can recognize the need for CI. The broader EFI community and workshop participants are encouraged to comment on this briefing paper.</p>
+<p>An objective of the workshop was to create an open-access version-controlled online document. This document was envisioned as a community-developed handbook of CI design principles and recommended practices accessible to the workshop participants and the broader Ecological Forecasting Initiative (EFI) community. The living document is to function as a comprehensive CI guide for both novice and experienced forecasters aligned with community-developed forecasting standards <span class="citation" data-cites="dietze2023community">(<a href="#ref-dietze2023community" role="doc-biblioref">Dietze et al. 2023</a>)</span>.</p>
 </section>
-<section id="step-by-step-summary-of-workshop" class="level2">
-<h2 class="anchored" data-anchor-id="step-by-step-summary-of-workshop"><a href="./workshopsummary/summary.html">Step by Step Summary of Workshop</a> <!-- Link to the summary --></h2>
+<section id="how-to-contribute" class="level1">
+<h1>How to Contribute</h1>
+<p>This repository is a collaborative space for the EFI community to design, discuss, and refine cyberinfrastructure (CI) for ecological forecasting. We welcome contributions from all backgrounds and levels of experience.</p>
+<p>We are using <a href="https://quarto.org/">Quarto</a> and <a href="https://docs.github.com/en/actions">GitHub Actions</a> to manage the deployment of the site. This allows contributors to write pages in <a href="https://www.markdownguide.org/getting-started/">Markdown</a> using familiar tools such as RStudio, Jupyter, or Visual Studio Code - focusing on the substance of the writing rather than worrying about styling or website deployment.</p>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
+<section id="prerequisites" class="level3">
+<h3 class="anchored" data-anchor-id="prerequisites">Prerequisites</h3>
+<p>Before you start, you will need:</p>
+<ul>
+<li>A GitHub account. You can sign up for one <a href="https://github.com/join">here</a>.</li>
+<li>Git installed on your computer. Follow the instructions <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">here</a> to install Git.</li>
+<li>Basic knowledge of Git and GitHub. If you’re new to these, we recommend this <a href="https://docs.github.com/en/get-started/start-your-journey/hello-world">tutorial</a>.</li>
+</ul>
+</section>
+<section id="installation" class="level3">
+<h3 class="anchored" data-anchor-id="installation">Installation</h3>
+<ol type="1">
+<li><p><strong>Fork the repository</strong></p>
+<p>Click the “Fork” button at the top right of this page to create a copy of this repository under your GitHub account.</p></li>
+<li><p><strong>Clone your fork</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/YOUR-USERNAME/efi-ci-workshop-2024.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><strong>Navigate to the repository directory</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a> <span class="bu">cd</span> efi-ci-workshop-2024</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><strong>Create a new branch</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> your-branch-name</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+</section>
+</section>
+<section id="contributing" class="level2">
+<h2 class="anchored" data-anchor-id="contributing">Contributing</h2>
+<ol type="1">
+<li><p><strong>Find an issue or task</strong></p>
+<p>Check the <a href="https://github.com/eco4cast/efi-ci-workshop-2024/issues">Issues</a> tab to find tasks that need to be completed or discussions that need your input. You can also create new issues or suggest improvements.</p></li>
+<li><p><strong>Work on your task</strong></p>
+<p>Once you’ve selected an issue or task, start working on it in your forked repository. Make sure to keep your changes focused and relevant to the task at hand.</p></li>
+<li><p><strong>Preview the website</strong></p>
+<p>(Optional) To preview your changes locally, all you need is a quarto installation.</p>
+<p>There are many ways to work with quarto. The Quarto project website has <a href="https://quarto.org/docs/get-started/">specific documentation</a> for how to install quarto for RStudio, Jupyter, VS Code, and more. Once you have quarto installed, you can preview your content in your tool of choice:</p></li>
+</ol>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Shell / Text Editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">VS Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Open the RStudio project file in the repo. Now you can render and preview the site with <code>quarto::quarto_preview()</code>. RStudio will pop up a web browser to preview the site. As you edit files, you can click the “Render on Save” checkbox, and the website will be updated whenever you save a change to them.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>If you’re working with lower-level tools like bash and vim, you can render the site at the shell and start up a preview server with</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The <code>quarto preview</code> command should open a web page to the correct location. If it does not, you can see the URL to go to in the command’s output.</p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>Within VS Code install the <a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto">Quarto extension</a>.</p>
+<p>To render the site:<br>
+<code>Ctrl+Shift+K</code> on PC or <code>Cmd+Shift+K</code> on mac. Althernatively, there is a ‘Quarto:Preview’ button (<img src="https://quarto.org/docs/tools/images/vscode-preview-icon.svg" class="img-fluid" alt="preview icon">) in the upper right-hand corner that will build the page.</p>
+<p>To execute a single code cell within a qmd:<br>
+<code>Ctrl+Shift+Enter</code> on PC or <code>Cmd+Shift+Enter</code> on mac.</p>
+<p>To close a preview session press <code>Ctrl+C</code> on PC or <code>Cmd+C</code> on a mac.</p>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li><p><strong>Commit your changes</strong></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Brief description of your changes"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><strong>Push your changes to your fork</strong></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin your-branch-name</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><strong>Create a Pull Request</strong></p>
+<p>Go to your forked repository on GitHub, and you should see a “Compare &amp; pull request” button. Click it and follow the instructions to submit your pull request.</p></li>
+<li><p><strong>Get a review</strong></p>
+<p>You can tag someone in particular to review the content you’re proposing to add; if you don’t tag anyone in particular, one of the repository maintainers will review your PR.</p></li>
+</ol>
+<section id="citations" class="level3">
+<h3 class="anchored" data-anchor-id="citations">Citations</h3>
+<p>Citations are just like if you were using bibtex to write a paper. Add your citation to the <code>references.bibtex</code>. Then cite in the page text. For example, you could cite the Ecological Forecasting Standards with markdown like <code>[@dietze2023community]</code> <span class="citation" data-cites="dietze2023community">(<a href="#ref-dietze2023community" role="doc-biblioref">Dietze et al. 2023</a>)</span>. For more information, see the <a href="https://quarto.org/docs/authoring/footnotes-and-citations.html">quarto help page on citations and footnotes</a>.</p>
+</section>
+</section>
+<section id="current-documents" class="level2">
+<h2 class="anchored" data-anchor-id="current-documents">Current documents</h2>
+<section id="step-by-step-summary-of-workshop" class="level3">
+<h3 class="anchored" data-anchor-id="step-by-step-summary-of-workshop"><a href="./workshopsummary/summary.html">Step by Step Summary of Workshop</a> <!-- Link to the summary --></h3>
 <p>The workshop’s agenda was crafted to cover essential CI design topics recommended by the organizing committee for inclusion in the handbook and to gather valuable input from attendees. Throughout the workshop, we documented the presentations, breakout sessions, and plenary discussions meticulously through detailed notes and audio recording transcripts. These materials were subsequently reviewed and refined to ensure clarity and accuracy in preparation for summarization.</p>
 <p>Each workshop session was summarized with the assistance of a Large Language Model AI specifically Claude 3 Opus. We provided the AI with the workshop’s annotated agenda, transcripts of audio recordings, presentation slides, and notes along with specific instructions to generate detailed summaries. These instructions were iteratively fine-tuned to ensure the summaries met our standards. Finally, we carefully reviewed the summaries to ensure they accurately reflected the workshop’s discussions. Special attention was given to common themes emerging from the breakout sessions which required deeper interpretation and analysis. The collation of those notes can be found in the following document which the community and workshop participants are encouraged to comment on.</p>
 </section>
-<section id="appendix" class="level2">
-<h2 class="anchored" data-anchor-id="appendix"><a href="./reference/EFI_CI_reference.html">Appendix</a> <!-- Link to the appendix --></h2>
-<p>The appendix includes acronyms, a glossary of terms, references, and a list of named participants and their affiliations.</p>
+<section id="briefing-paper" class="level3">
+<h3 class="anchored" data-anchor-id="briefing-paper"><a href="./workshopsummary/brief.html">Briefing Paper</a> <!-- Link to the briefing paper --></h3>
+<p>A 1500-word briefing paper has been prepared in lieu of the initially planned community-developed handbook of CI design principles. After collating the workshop materials and reviewing the workshop exit survey, it was apparent that the workshop discussions were held at a higher level than necessary to achieve the initial goal. At this higher non-technical level of discussion, there were existing design principles that participants agreed with, but there are nonetheless obstacles to implementation.</p>
+<p>The briefing paper outlines the necessity of cyberinfrastructure (CI) and highlights key thematic obstacles to implementation as identified in the workshop. Additionally, it includes recommendations derived from these themes. The target audience includes potential advocates in agencies, scientific societies, stakeholder groups, and boundary organizations who may not possess technical expertise but can recognize the need for CI. The broader EFI community and workshop participants are encouraged to comment on this briefing paper.</p>
 </section>
+<section id="appendix" class="level3">
+<h3 class="anchored" data-anchor-id="appendix"><a href="./reference/EFI_CI_reference.html">Appendix</a> <!-- Link to the appendix --></h3>
+<p>The appendix includes acronyms, a glossary of terms, and a list of named participants and their affiliations.</p>
 </section>
-<section id="workshop-organization-agenda-and-participants" class="level1">
-<h1>Workshop Organization, Agenda, and Participants</h1>
-<section id="participants-and-impressions" class="level2">
-<h2 class="anchored" data-anchor-id="participants-and-impressions">Participants and Impressions</h2>
-<p>The workshop participants included a diverse mix of 41 participants from various sectors. Federal agencies were well-represented with 19 participants from 6 different agencies including USGS, NOAA, and NASA. Academia contributed 12 participants from 11 different institutions with international representation from the Finnish Meteorological Institute. The private sector added 5 participants, while NGOs including IOOS regional associations represented the remainder.</p>
-<p>According to an exit survey of 28 participants prior to the workshop, the majority of attendees were slightly or moderately knowledgeable of ecological forecasting CI. Around 20% were very knowledgeable, and 7% were not at all knowledgeable. This makeup of participants influenced the scope of the topics covered, focusing more on higher level concepts and general design rather than the technical aspects of cyber infrastructure. Overall, the workshop was well received. It met participants’ expectations, with the majority being ‘extremely satisfied’, although the lack of technical content was noted by several survey respondents.</p>
-<p>Reported knowledge gains from the workshop were significant. Participants increased their familiarity with the EFI initiative, NERACOOS, and ecological forecasting cyberinfrastructure in general. There was a strong gain in knowledge about the forecasting cyberinfrastructure of other organizations, increasing from 0% and 11% to 14% and 71% (very knowledgeable and moderately knowledgeable respectively). The strong satisfaction of participants with the workshop was underscored by strong agreement that the workshop facilitated effective collaboration, increased community engagement, and was considered a valuable use of time aligning well with personal goals. Moreover, interactions with workshop organizers and the efficacy of communications were particularly praised. Participants valued the chance to meet peers, learn from diverse CI use cases, and engage in discussions that spanned across multiple perspectives including those focusing on design justice principles. Recommendations for future workshops emphasized a desire for more hands-on experiences with cyberinfrastructure tools, deeper technical discussions, and enhanced skill-building sessions.</p>
 </section>
 <section id="organizers-and-funders" class="level2">
 <h2 class="anchored" data-anchor-id="organizers-and-funders">Organizers and Funders</h2>
 <p>The workshop was co-hosted by EFI and the Northeastern Regional Association for Coastal Ocean Observing Systems (NERACOOS) in Portsmouth, New Hampshire. It was made possible through support from the National Oceanic and Atmospheric Administration/US IOOS, the National Aeronautics and Space Administration, the Northeastern Regional Association of Coastal Ocean Observing Systems, the Ecological Forecasting Initiative, and the U.S. Geological Survey.</p>
 <p><strong>Organizing Committee</strong>: Jake Zwart (USGS), Hassan Moustahfid (NOAA), Chris Brown (University of Maryland), Jessica Burnett (NASA), Jake Kritzer (NERACOOS), Rob Cardeiro (NERACOOS), Cameron Thompson (NERACOOS), Emily Silva (NERACOOS), Caitlin Shanahan (NERACOOS), Jody Peters (University of Notre Dame), Mike Dietze (Boston University)</p>
-</section>
-<section id="agenda" class="level2">
-<h2 class="anchored" data-anchor-id="agenda">Agenda</h2>
-<table class="table">
-<colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 66%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Date</th>
-<th>Time</th>
-<th>Activity</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>April 10</td>
-<td>8:30 - 9:00 am</td>
-<td>Welcome Coffee &amp; Tea</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>9:00 - 10:00 am</td>
-<td>Overview of Workshop Goals and Why We Are Here <br> Leads: Workshop Organizing Committee</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>10:00 - 11:00 am</td>
-<td>Design Justice Principles Primer <br> Lead: Sean Dorr, University of Minnesota</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>11:00 - 11:15 am</td>
-<td>Coffee and Tea Break</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>11:15 - 12:00 pm</td>
-<td>Design Justice Principles Activity <br> Lead: Sean Dorr, University of Minnesota</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>12:00 - 12:10 pm</td>
-<td>Group Photo</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>12:10 - 1:30 pm</td>
-<td>Lunch</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>1:30 - 3:30 pm</td>
-<td>State-of-the-art Forecasting Workflows and Best Practices Presentations</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td>- Istem Fer, Finnish Meteorological Institute: What could an operational agricultural forecasting CI look like? Field Observatory Network (FiON) model-data workflows and services</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td>- David Watkins, U.S. Geological Survey: Forecasting infrastructure in context: lessons learned from greenfield forecasting projects</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td>- Clarissa Anderson, University of California San Diego and Southern California Coastal Ocean Observing System: Development of a Harmful Algal Bloom (HAB) Data Assembly Center in support of a National HAB Observing Network</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td>- Quinn Thomas, Virginia Tech, and Carl Boettiger, University of California Berkeley: Adventures from a million forecast march: community driven-CI for ecological forecasting</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td>- Alexandra Kirk (virtual), National Aeronautics and Space Administration IMPACT: VEDA, an open-source open-science platform for Earth Observation data</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td>- Renato Figueiredo, University of Florida: From FLARE to FaaSr: Towards Reusable Scalable Cross-Platform Cloud Native Workflows</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>3:30 - 3:45 pm</td>
-<td>Coffee and Tea Break</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>3:45 - 5:00 pm</td>
-<td>Breakout Group Discussions: What are common best practices and current technical gaps?</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>5:00 pm</td>
-<td>End of Day 1</td>
-</tr>
-<tr class="even">
-<td>April 11</td>
-<td>8:30 - 9:00 am</td>
-<td>Welcome Coffee &amp; Tea</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>9:00 - 9:10 am</td>
-<td>Recap of Day 1 and Overview of Day 2 <br> Lead: Jake Zwart</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>9:10 - 10:15 am</td>
-<td>Gaps, Barriers, and Other Challenges Presentations</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td>- Mike Dietze, Boston University</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td>- Marie Colton, Hydros LLC</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td>- David Scheurer, NOAA Ocean Service</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>10:15 - 10:30 am</td>
-<td>Coffee &amp; Tea Break</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>10:30 - 12:00 pm</td>
-<td>Breakout Group Discussions: Synthesize common gaps, barriers, and challenges</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td>Recommendations for overcoming common gaps and barriers</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>12:00 - 1:30 pm</td>
-<td>Lunch</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>1:30 - 3:00 pm</td>
-<td>Breakout Group Discussions: Propose generalized cyberinfrastructure design for ecological forecasting</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>3:00 - 3:15 pm</td>
-<td>Coffee &amp; Tea Break</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>3:15 - 3:45 pm</td>
-<td>Report out on Proposed Generalized Cyberinfrastructure Design <br> Lead: Jake Zwart</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>3:45 - 4:00 pm</td>
-<td>Bio Break</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>4:00 - 5:00 pm</td>
-<td>Implementation and Coordination by Organizations and Agencies <br> Leads: Jessica Burnett and Christopher Brown <br> Panel discussion:</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td>- Clarissa Anderson, UCSD &amp; SCCOOS</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td>- Stinger Guala, NASA Earth Science Data Systems</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td>- Marie Colton, Hydros LLC</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td>- David Scheurer, NOAA Ocean Service</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td>- Steve Marley, NOAA Satellite &amp; Information Service</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td>- Bruce Wilson, ORNL Distributed Active Archive Center</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>5:00 pm</td>
-<td>End of Day 2</td>
-</tr>
-<tr class="even">
-<td>April 12</td>
-<td>8:30 - 9:00 am</td>
-<td>Welcome Coffee &amp; Tea</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>9:00 - 9:10 am</td>
-<td>Recap of Day 2 and Overview of Day 3 <br> Lead: Jake Zwart</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>9:10 - 10:45 am</td>
-<td>Implementation and Coordination by Organizations and Agencies <br> Leads: Jessica Burnett and Christopher Brown <br> Breakout group discussions</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>10:45 - 11:00 am</td>
-<td>Coffee &amp; Tea Break</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>11:00 - 11:45 am</td>
-<td>Report out on Implementation and Coordination <br> Leads: Jessica Burnett and Christopher Brown</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>11:45 - 12:00 pm</td>
-<td>Closing Remarks and End of Workshop <br> Lead: Workshop organizing committee</td>
-</tr>
-</tbody>
-</table>
 
 
 
