@@ -16,7 +16,7 @@ The lack of widely accepted cyberinfrastructure (CI) design principles poses a m
 
 # Workshop Outcomes
 
-An objective of the workshop was to create an open-access version-controlled online document. This document was envisioned as a community-developed handbook of CI design principles and recommended practices accessible to the workshop participants and the broader EFI community. The living document was to function as a comprehensive CI guide for both novice and experienced forecasters aligned with community-developed forecasting standards (Dietze et al. 2023).
+An objective of the workshop was to create an open-access version-controlled online document. This document was envisioned as a community-developed handbook of CI design principles and recommended practices accessible to the workshop participants and the broader EFI community. The living document was to function as a comprehensive CI guide for both novice and experienced forecasters aligned with community-developed forecasting standards [@dietze2023community].
 
 ## [Briefing Paper](brief.html) <!-- Link to the briefing paper -->
 
