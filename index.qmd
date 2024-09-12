@@ -18,19 +18,19 @@ The lack of widely accepted cyberinfrastructure (CI) design principles poses a m
 
 An objective of the workshop was to create an open-access version-controlled online document. This document was envisioned as a community-developed handbook of CI design principles and recommended practices accessible to the workshop participants and the broader EFI community. The living document was to function as a comprehensive CI guide for both novice and experienced forecasters aligned with community-developed forecasting standards [@dietze2023community].
 
-## [Briefing Paper](brief.html) <!-- Link to the briefing paper -->
+## [Briefing Paper](workshopsummary/brief.qmd) <!-- Link to the briefing paper -->
 
 A 1500-word briefing paper has been prepared in lieu of the initially planned community-developed handbook of CI design principles. After collating the workshop materials and reviewing the workshop exit survey, it was apparent that the workshop discussions were held at a higher level than necessary to achieve the initial goal. At this higher non-technical level of discussion, there were existing design principles that participants agreed with, but there are nonetheless obstacles to implementation.
 
 The briefing paper outlines the necessity of cyberinfrastructure (CI) and highlights key thematic obstacles to implementation as identified in the workshop. Additionally, it includes recommendations derived from these themes. The target audience includes potential advocates in agencies, scientific societies, stakeholder groups, and boundary organizations who may not possess technical expertise but can recognize the need for CI. The broader EFI community and workshop participants are encouraged to comment on this briefing paper.
 
-## [Step by Step Summary of Workshop](summary.html) <!-- Link to the summary -->
+## [Step by Step Summary of Workshop](workshopsummary/summary.qmd) <!-- Link to the summary -->
 
 The workshop's agenda was crafted to cover essential CI design topics recommended by the organizing committee for inclusion in the handbook and to gather valuable input from attendees. Throughout the workshop, we documented the presentations, breakout sessions, and plenary discussions meticulously through detailed notes and audio recording transcripts. These materials were subsequently reviewed and refined to ensure clarity and accuracy in preparation for summarization.
 
 Each workshop session was summarized with the assistance of a Large Language Model AI specifically Claude 3 Opus. We provided the AI with the workshop's annotated agenda, transcripts of audio recordings, presentation slides, and notes along with specific instructions to generate detailed summaries. These instructions were iteratively fine-tuned to ensure the summaries met our standards. Finally, we carefully reviewed the summaries to ensure they accurately reflected the workshop's discussions. Special attention was given to common themes emerging from the breakout sessions which required deeper interpretation and analysis. The collation of those notes can be found in the following document which the community and workshop participants are encouraged to comment on.
 
-## [Appendix](EFI_CI_glossary.html) <!-- Link to the appendix -->
+## [Appendix](reference/EFI_CI_reference.qmd) <!-- Link to the appendix -->
 
 The appendix includes acronyms, a glossary of terms, references, and a list of named participants and their affiliations.
 
