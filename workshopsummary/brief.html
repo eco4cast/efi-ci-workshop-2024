@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.146">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Cameron Thompson">
+
+<title>Cyberinfrastructure for Efficient Ecological Forecasting - EFI-CI Briefing Paper</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/EFI_Logo-1.jpg" rel="icon" type="image/jpeg">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Cyberinfrastructure for Efficient Ecological Forecasting</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-workshop-summary" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Workshop Summary</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-workshop-summary">    
+        <li>
+    <a class="dropdown-item" href="../workshopsummary/summary.html" rel="" target="">
+ <span class="dropdown-text">EFI-CI Workshop Summary</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../workshopsummary/brief.html" rel="" target="">
+ <span class="dropdown-text">EFI-CI Briefing Paper</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-reference" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Reference</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-reference">    
+        <li>
+    <a class="dropdown-item" href="../reference/EFI_CI_reference.html" rel="" target="">
+ <span class="dropdown-text">Appendix: Acronyms, Terms, People, and References</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshopsummary/brief.html">EFI-CI Briefing Paper</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshopsummary/summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EFI-CI Workshop Summary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshopsummary/brief.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">EFI-CI Briefing Paper</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#cyberinfrastructure-to-enable-ecological-forecasting-for-decision-making" id="toc-cyberinfrastructure-to-enable-ecological-forecasting-for-decision-making" class="nav-link active" data-scroll-target="#cyberinfrastructure-to-enable-ecological-forecasting-for-decision-making">Cyberinfrastructure to Enable Ecological Forecasting for Decision Making</a>
+  <ul class="collapse">
+  <li><a href="#a-workshop-for-cyberinfrastructure-design-principles" id="toc-a-workshop-for-cyberinfrastructure-design-principles" class="nav-link" data-scroll-target="#a-workshop-for-cyberinfrastructure-design-principles">A Workshop for Cyberinfrastructure Design Principles</a></li>
+  <li><a href="#cyberinfrastructure-and-cloud-based-architecture" id="toc-cyberinfrastructure-and-cloud-based-architecture" class="nav-link" data-scroll-target="#cyberinfrastructure-and-cloud-based-architecture">Cyberinfrastructure and Cloud-based Architecture</a></li>
+  <li><a href="#community-standards-best-practices-and-flexibility" id="toc-community-standards-best-practices-and-flexibility" class="nav-link" data-scroll-target="#community-standards-best-practices-and-flexibility">Community Standards, Best Practices, and Flexibility</a></li>
+  <li><a href="#human-capital-collaboration-and-communication" id="toc-human-capital-collaboration-and-communication" class="nav-link" data-scroll-target="#human-capital-collaboration-and-communication">Human Capital, Collaboration, and Communication</a></li>
+  <li><a href="#design-justice-principles-and-stakeholder-engagement" id="toc-design-justice-principles-and-stakeholder-engagement" class="nav-link" data-scroll-target="#design-justice-principles-and-stakeholder-engagement">Design Justice Principles and Stakeholder Engagement</a></li>
+  <li><a href="#culture-institutions-and-community" id="toc-culture-institutions-and-community" class="nav-link" data-scroll-target="#culture-institutions-and-community">Culture, Institutions, and Community</a></li>
+  <li><a href="#conclusion-and-recommendations" id="toc-conclusion-and-recommendations" class="nav-link" data-scroll-target="#conclusion-and-recommendations">Conclusion and Recommendations</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/eco4cast/efi-ci-workshop-2024/edit/main/workshopsummary/brief.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/eco4cast/efi-ci-workshop-2024/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">EFI-CI Briefing Paper</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Cameron Thompson </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="cyberinfrastructure-to-enable-ecological-forecasting-for-decision-making" class="level1">
+<h1>Cyberinfrastructure to Enable Ecological Forecasting for Decision Making</h1>
+<p>Society increasingly faces environmental challenges that require people to make decisions based on what they think the future state of nature will be. To that end, ecological forecasting attempts to make predictions that inform decision-makers on the likely future state of the environment, and numerous predictive models have been developed. These models represent environmental processes and use real world data to make predictions, the results of which help us understand the natural world and give context to changes we observe. However, they are often run manually or using boutique and independently-developed workflows that are difficult to iteratively learn from and hinder our collective ability to efficiently generate forecasts. Meeting the challenge of making informed decisions in a rapidly changing world requires frequent, near-term, and reproducible ecological forecasts which are supported by robust cyberinfrastructure.</p>
+<section id="a-workshop-for-cyberinfrastructure-design-principles" class="level2">
+<h2 class="anchored" data-anchor-id="a-workshop-for-cyberinfrastructure-design-principles">A Workshop for Cyberinfrastructure Design Principles</h2>
+<p>Cyberinfrastructure can facilitate our ability to create, improve, and learn from forecasts, but seemingly there is a lack of widely accepted cyberinfrastructure design principles which is a major obstacle for researchers and organizations seeking to engage in ecological forecasting. In an effort to address these obstacles, a workshop was convened by EFI and the Northeastern Regional Association for Coastal Ocean Observing Systems (NERACOOS) to: 1. Collate common cyberinfrastructure practices currently used 2. Identify cyberinfrastructure needs and gaps 3. Propose cyberinfrastructure designs for various forecasting problems</p>
+<p>The workshop participants included a diverse mix of participants from various sectors including NGOs, private industry, academia, and federal agencies.</p>
+<p>Through presentations, panels, and breakout sessions, participants discussed workflows, best practices, and the implementation of cyberinfrastructure across agencies. Although there were technical presentations, the makeup of participants influenced the scope of the topics covered and contributed to the majority of discussions focusing on higher level concepts and general design rather than the technical aspects of cyberinfrastructure. Often the participants’ recommendations reflected those that are in the literature, such as the FAIR principles which stipulate that data should be findable, accessible, interoperable, and reusable. Otherwise, their varied experiences and perspectives highlighted the many challenges which hinder adoption of best practices and advancement of ecological forecasting. Here we report on some of the major themes from the workshop and identify areas for advancing the implementation of cyberinfrastructure to support ecological forecasting.</p>
+</section>
+<section id="cyberinfrastructure-and-cloud-based-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="cyberinfrastructure-and-cloud-based-architecture">Cyberinfrastructure and Cloud-based Architecture</h2>
+<p>Cyberinfrastructure refers to the integrated suite of hardware, software, data, and human resources designed to support data analysis and information processing. The design of cyberinfrastructure for ecological forecasting can take many different forms and the sequence of processes within that infrastructure constitutes the workflow. Cyberinfrastructure best practices include concepts like data standards and modularity which enable the workflow to be automated, flexible, and scalable. These workflow best practices are also aspects of cloud-based architecture which involves designing systems specifically to leverage cloud services and capabilities. However, cyberinfrastructure can adopt cloud-based architecture principles without using vendor cloud services. Doing so takes advantage of the flexible, scalable, efficient design while enabling local control and the use of cost-effective infrastructure like on-premises high-performance-computing systems.</p>
+<p>The rapid and inevitable shift to cloud computing is upending traditional IT architectures, procurement models, and budget structures. Organizations risk cost inflation and loss of leverage to commercial providers when locking into cloud vendor services. Utilizing cloud-based architecture while minimizing reliance on services is a solution to some of the challenges and enables adoption of cyberinfrastructure best practices. Another strategy is to coordinate across agencies and other organizations to reach collective or at least transparent agreements on service requirements and costs.</p>
+</section>
+<section id="community-standards-best-practices-and-flexibility" class="level2">
+<h2 class="anchored" data-anchor-id="community-standards-best-practices-and-flexibility">Community Standards, Best Practices, and Flexibility</h2>
+<p>Establishing community-wide conventions for data standards and workflow best practices is crucial for developing robust cyberinfrastructure. However, a balance must be struck between standardization and flexibility to accommodate the diverse needs of ecological forecasting. Integrating and harmonizing heterogeneous data from diverse sources is a significant barrier, particularly for biological and ecological data which are difficult to standardize. Therefore, the focus should be on common concepts and prioritizing standard outputs rather than inputs, which allows for direct comparison of outcomes.</p>
+<p>The development of standards should be fostered through communities of practice since grassroots involvement will lead to greater adoption and widespread acceptance. Where available, existing conventions should be borrowed, and if no standards exist, then a project is encouraged to create them. To incentivize the establishment and adoption of data standards and best practices, they can be required by funding agencies and recognized by communities as with forecasting challenges. Further support should be provided by collating catalogs of existing models, data, and tools, and by investing in open-source technologies.</p>
+</section>
+<section id="human-capital-collaboration-and-communication" class="level2">
+<h2 class="anchored" data-anchor-id="human-capital-collaboration-and-communication">Human Capital, Collaboration, and Communication</h2>
+<p>Cyberinfrastructure for ecological forecasting requires people with diverse skills and expertise to ensure effective development, implementation, and maintenance of the system. At the research stage, ecological forecasters are often domain scientists and data scientists who often struggle to operationalize a model into a workflow because of the steep learning curve to the skills and expertise needed. In addition to scientific knowledge, ecological forecasting requires technical skills in software development, continuous deployment, cloud architecture, data management, visualization, and project management. Collaboration and effective communication is needed among people with these various backgrounds in order to advance ecological forecasting. However, there is a lack of trained individuals accessible to the ecological forecasting community who can fill those roles.</p>
+<p>Multiple strategies should be employed to build the human infrastructure needed for ecological forecasting. These include training and workforce development for new professionals to fill various roles as well as skill-building for inexperienced workers. This will enable them to work towards operationalizing models and more effectively communicate and collaborate with other technical professionals.</p>
+</section>
+<section id="design-justice-principles-and-stakeholder-engagement" class="level2">
+<h2 class="anchored" data-anchor-id="design-justice-principles-and-stakeholder-engagement">Design Justice Principles and Stakeholder Engagement</h2>
+<p>When designing an ecological forecasting model and supporting cyberinfrastructure, it is essential to meaningfully engage with stakeholders early on and continuously throughout the research and operationalization process. Ecological forecasting models should be designed to inform specific decisions to ensure their relevance and usefulness. This design includes their visualization to ensure that the information being transmitted is intuitive and accessible, providing stakeholders with clear and actionable insights.</p>
+<p>However, effective stakeholder engagement takes time to build relationships and trust, and high-quality engagement is particularly challenging when working with marginalized and under-resourced communities. Embedding design justice principles into the development process can center the voices and needs of these communities during the creation of ecological forecasting tools. This approach advocates for equitable participation and the inclusion of diverse perspectives which helps distribute the benefits of ecological forecasting equitably and addresses the unique challenges faced by marginalized groups. For ecological forecasting cyberinfrastructure, specific concerns include the relevance and accessibility of products and the use of data derived from marginalized communities. In those latter cases, following CARE (Collective Benefit, Authority to Control, Responsibility, and Ethics) principles can further help avoid potential conflicts and ensure ethical practices.</p>
+</section>
+<section id="culture-institutions-and-community" class="level2">
+<h2 class="anchored" data-anchor-id="culture-institutions-and-community">Culture, Institutions, and Community</h2>
+<p>Science culture and institutions incentivize novelty and innovation, while the operationalization of ecological forecasts with cyberinfrastructure requires stability, reliability, and continuity. Furthermore, there are tensions between what is considered research quality and production quality which hinders the translation of models into operation-ready workflows. These barriers are exacerbated by limited scope and duration of grant funding which is typically inadequate for establishing and maintaining cyberinfrastructure.</p>
+<p>Organizational inertia is another obstacle to ecological forecasting implementation since workers are habituated to rely on particular funding sources and use familiar technologies and workflows which are not well-suited for sustained cyberinfrastructure. These ruts may also make workers resistant to using established conventions and best practices in favor of their own or those used by their organization. Meanwhile, different agencies and organizations have their own missions and security requirements which may make steps towards interoperability challenging.</p>
+<p>Cross-agency collaboration and implementation of sustained cyberinfrastructure is a sure path towards the advancement of ecological forecasting, but it will require overcoming cultural and institutional barriers. Therefore, it is imperative for grassroots communities in conjunction with agency champions to organize and advocate for necessary changes.</p>
+</section>
+<section id="conclusion-and-recommendations" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-and-recommendations">Conclusion and Recommendations</h2>
+<p>The workshop was conceived on the premise that ecological forecasting cyberinfrastructure lacks widely accepted design principles. However, participants largely agreed with the best practices presented, which are consistent with the existing literature. Despite this consensus, barriers to adoption persist, primarily due to human factors, organizational culture, and limited institutional resources. To overcome these obstacles, we recommend the following:</p>
+<ul>
+<li>Develop compelling communication materials in coordination with scientific societies including:
+<ul>
+<li>White papers that explain the need for ecological forecasting and cyberinfrastructure</li>
+<li>Case studies that showcase the success of ecological forecasting</li>
+<li>Flagship projects that could have substantial impact and visibility</li>
+</ul></li>
+<li>Find and empower champions at multiple levels within agencies and equip them with communication materials</li>
+<li>Build communities of practice:
+<ul>
+<li>Participate in their workshops and conferences to promote cyberinfrastructure best practices</li>
+<li>Provide them with tools, training, and platforms to foster collaborations</li>
+</ul></li>
+<li>Expand the workforce and bridge expertise by collaborating with academic partners to modernize curricula, develop core competencies, and create professional development opportunities</li>
+<li>Align with agency missions and priorities to gain traction in a resource-constrained environment
+<ul>
+<li>Reframe ecological forecasting in terms of agency missions and societal priorities such as economic development, public health, food and water security, hazard resilience, and environmental justice.</li>
+<li>Capitalize on strategic opportunities such as high-profile initiatives, administration transitions, and budget cycles to promote ecological forecasting</li>
+</ul></li>
+<li>Advocate for ecological forecasting cyberinfrastructure in coordination with scientific societies, stakeholder groups, and boundary organizations to effectively translate needs, priorities, and opportunities.</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    if (id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        return container.innerHTML
+      } else {
+        return note.innerHTML;
+      }
+    } else {
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      try { hash = new URL(url).hash; } catch {}
+      const id = hash.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note !== null) {
+        try {
+          const html = processXRef(id, note);
+          instance.setContent(html);
+        } finally {
+          instance.enable();
+          instance.show();
+        }
+      } else {
+        // See if we can fetch this
+        fetch(url.split('#')[0])
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.getElementById(id);
+          console.log(htmlDoc.body.innerHTML);
+          if (note !== null) {
+            const html = processXRef(id, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
