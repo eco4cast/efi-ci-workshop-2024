@@ -1,5 +1,5 @@
 ---
-title: "EFI-CI Briefing Paper"
+title: "{{< fa arrow-right >}} EFI-CI Briefing Paper"
 format: html
 author: "Cameron Thompson"
 ---

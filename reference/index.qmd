@@ -1,0 +1,9 @@
+---
+title: "Reference"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-position: left
+---
+

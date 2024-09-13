@@ -1,6 +1,5 @@
 ---
 title: "Cyberinfrastructure for Efficient Ecological Forecasting"
-author: "Cameron Thompson"
 format:
   html:
     toc: true
@@ -19,7 +18,7 @@ The lack of widely accepted cyberinfrastructure (CI) design principles poses a m
 3. **Propose** CI designs for various forecasting problems
 
 
-# Workshop Outcomes
+## Workshop Outcomes
 
 An objective of the workshop was to create an open-access version-controlled online document. This document was envisioned as a community-developed handbook of CI design principles and recommended practices accessible to the workshop participants and the broader Ecological Forecasting Initiative (EFI) community. The living document is to function as a comprehensive CI guide for both novice and experienced forecasters aligned with community-developed forecasting standards [@dietze2023community].
 
@@ -27,12 +26,11 @@ An objective of the workshop was to create an open-access version-controlled onl
 
 This repository is a collaborative space for the EFI community to design, discuss, and refine cyberinfrastructure (CI) for ecological forecasting. We welcome contributions from all backgrounds and levels of experience.
 
-We are using [Quarto](https://quarto.org/) and [GitHub Actions](https://docs.github.com/en/actions) to manage
-the deployment of the site. This allows contributors to write pages in
-[Markdown](https://www.markdownguide.org/getting-started/) using
-familiar tools such as RStudio, Jupyter, or Visual Studio Code -
-focusing on the substance of the writing rather than worrying about
-styling or website deployment.
+We use [Quarto](https://quarto.org/) and [GitHub Actions](https://docs.github.com/en/actions) to streamline the deployment of this site. Contributors can write pages in 
+[Markdown](https://www.markdownguide.org/getting-started/) using familiar tools
+like RStudio, Jupyter, or Visual Studio Code. This approach allows contributors
+to focus on content creation without worrying about styling or 
+managing the website deployment.
 
 ## Getting Started
 
@@ -48,7 +46,7 @@ Before you start, you will need:
 
 1. **Fork the repository**
 
-   Click the "Fork" button at the top right of this page to create a copy of this repository under your GitHub account.
+   Click the "Fork" button at the top right of the [efi-ci-workshop-2024 github repository](https://github.com/eco4cast/efi-ci-workshop-2024) to create a copy of this repository under your GitHub account.
 
 2. **Clone your fork**
 
@@ -80,14 +78,12 @@ Before you start, you will need:
    
 3. **Preview the website**
 
-   (Optional) To preview your changes locally, all you need is a quarto
-installation. 
+   (Optional) To preview your changes locally, you'll need a Quarto installation.
 
-   There are many ways to work with quarto. The Quarto project website
-has [specific documentation](https://quarto.org/docs/get-started/)
-for how to install quarto for RStudio, Jupyter, VS Code, and more.
-Once you have quarto installed, you can preview your content in your
-tool of choice:
+   There are several ways to work with Quarto. The [Quarto documentation](https://quarto.org/docs/get-started/)
+provides detailed instructions on how to install it for RStudio, 
+Jupyter, VS Code, and other tools. Once Quarto is installed, you can easily
+preview your content using your preferred tool:
 
 ::: panel-tabset
 ## RStudio
@@ -150,10 +146,11 @@ To close a preview session press `Ctrl+C` on PC or `Cmd+C` on a mac.
 
 ### Citations
 
-Citations are just like if you were using bibtex to write a paper. Add
-your citation to the `references.bibtex`. Then cite in the page text.
-For example, you could cite the Ecological Forecasting Standards with markdown like
-`[@dietze2023community]` [@dietze2023community]. For more information, see the
+Citing sources in Quarto works just like using BibTeX in a research paper.
+First, add your references to the `references.bibtex` file. Then, you can cite 
+them directly in the page text. For example, to cite the Ecological Forecasting 
+Standards, you would write
+`[@dietze2023community]` which renders as [@dietze2023community]. For more information, see the
 [quarto help page on citations and
 footnotes](https://quarto.org/docs/authoring/footnotes-and-citations.html).
 

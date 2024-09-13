@@ -1,7 +1,6 @@
 ---
-title: "Reference: Acronyms, Definitions, and People"
+title: "{{< fa arrow-right >}} Acronyms and Definitions"
 format: html
-author: "Cameron Thompson"
 ---
 
 ## Acronyms and Abbreviations
@@ -54,6 +53,8 @@ author: "Cameron Thompson"
 
 ### CARE Principles
 
+From [@carroll2020care]
+
 - **Collective Benefit**
   - C1: For inclusive development and innovation
   - C2: For improved governance and citizen engagement
@@ -72,6 +73,8 @@ author: "Cameron Thompson"
   - E3: For future use
 
 ### FAIR Principles
+
+From [@wilkinson2016fair] 
 
 - **To be Findable**:
   - F1. (meta)data are assigned a globally unique and persistent identifier
@@ -93,7 +96,7 @@ author: "Cameron Thompson"
     - R1.2. (meta)data are associated with detailed provenance
     - R1.3. (meta)data meet domain-relevant community standards
 
-### Adapted Forecasting and Cyberinfrastructure Terms from Fer et. al 2021
+### Adapted Forecasting and Cyberinfrastructure Terms from [@fer2021beyond] 
 
 - **Abstraction**: The process of focusing on the design of the IT system architecture and how components relate to one another.
 - **Accessibility**: Availability of software and data in a public location with complete metadata and the protocols to use, install, implement, and employ them shared.
@@ -120,7 +123,7 @@ author: "Cameron Thompson"
 - **Workflow**: Computational tasks executed in sequence with data flow.
 - **Virtual machines**: Software providing basic OS functionality in a contained environment.
 
-### Adapted Forecasting and Cyberinfrastructure Terms from Hendry et al. 2023
+### Adapted Forecasting and Cyberinfrastructure Terms from [@hendry2023prediction] 
 
 - **Hypothesis**: An expectation on system workings for testable predictions.
 - **Prediction**: Formal assertion about a state or outcome before it is known.
@@ -157,48 +160,3 @@ author: "Cameron Thompson"
 - **Stack Catalog**: A specification for organizing and searching metadata about spatiotemporal data, making it easier to find and share such data.
 - **Thredds**: A server that makes it easy to access and share scientific data using common standards.
 - **Zarr**: A format for efficiently storing large multi-dimensional arrays of data, often used in scientific research.
-
-## Named Participants and Affiliations
-
-- **Alexandra Kirk** - NASA IMPACT
-- **Bruce Wilson** - Oak Ridge National Laboratory (ORNL) Distributed Active Archive Center
-- **Caitlin Shanahan** - NERACOOS
-- **Cameron Thompson** - NERACOOS
-- **Carl Boettiger** - University of California Berkeley
-- **Chris Brown** - University of Maryland
-- **Chris Tate** - Red Hat
-- **Clarissa Anderson** - University of California San Diego and SCCOOS
-- **David Scheurer** - NOAA Ocean Service
-- **David Watkins** - USGS
-- **Emily Silva** - NERACOOS
-- **Hassan Moustahfid** - NOAA
-- **Istem Fer** - Finnish Meteorological Institute
-- **Jake Kritzer** - NERACOOS
-- **Jake Zwart** - USGS
-- **Jessica Burnett** - NASA
-- **Jody Peters** - University of Notre Dame
-- **Kelly Knee** - RPS Ocean Science
-- **Marie Colton** - Hydros LLC
-- **Melissa Kenney** - University of Minnesota Institute on the Environment
-- **Mike Dietze** - Boston University
-- **Quinn Thomas** - Virginia Tech
-- **Renato Figueiredo** - University of Florida
-- **Rob Cardeiro** - NERACOOS
-- **Sean Dorr** - University of Minnesota Twin Cities
-- **Tyson Swetnam** - University of Arizona
-
-## Participant Impressions
-
-The workshop participants included a diverse mix of 41 participants from various sectors. Federal agencies were well-represented with 19 participants from 6 different agencies including USGS, NOAA, and NASA. Academia contributed 12 participants from 11 different institutions with international representation from the Finnish Meteorological Institute. The private sector added 5 participants, while NGOs including IOOS regional associations represented the remainder.
-
-According to an exit survey of 28 participants prior to the workshop, the majority of attendees were slightly or moderately knowledgeable of ecological forecasting CI. Around 20% were very knowledgeable, and 7% were not at all knowledgeable. This makeup of participants influenced the scope of the topics covered, focusing more on higher level concepts and general design rather than the technical aspects of cyber infrastructure. Overall, the workshop was well received. It met participants' expectations, with the majority being 'extremely satisfied', although the lack of technical content was noted by several survey respondents.
-
-Reported knowledge gains from the workshop were significant. Participants increased their familiarity with the EFI initiative, NERACOOS, and ecological forecasting cyberinfrastructure in general. There was a strong gain in knowledge about the forecasting cyberinfrastructure of other organizations, increasing from 0% and 11% to 14% and 71% (very knowledgeable and moderately knowledgeable respectively). The strong satisfaction of participants with the workshop was underscored by strong agreement that the workshop facilitated effective collaboration, increased community engagement, and was considered a valuable use of time aligning well with personal goals. Moreover, interactions with workshop organizers and the efficacy of communications were particularly praised. Participants valued the chance to meet peers, learn from diverse CI use cases, and engage in discussions that spanned across multiple perspectives including those focusing on design justice principles. Recommendations for future workshops emphasized a desire for more hands-on experiences with cyberinfrastructure tools, deeper technical discussions, and enhanced skill-building sessions.
-
-## References
-
-- Carroll, Stephanie Russo, Ibrahim Garba, Oscar L. Figueroa-Rodríguez, Jarita Holbrook, Raymond Lovett, Simeon Materechera, Mark Parsons, et al. “The CARE Principles for Indigenous Data Governance.” Data Science Journal 19 (November 4, 2020): 43–43. [https://doi.org/10.5334/dsj-2020-043](https://doi.org/10.5334/dsj-2020-043).
-- Dietze, Michael C., R. Quinn Thomas, Jody Peters, Carl Boettiger, Gerbrand Koren, Alexey N. Shiklomanov, and Jaime Ashander. “A Community Convention for Ecological Forecasting: Output Files and Metadata Version 1.0.” Ecosphere 14, no. 11 (2023): e4686. [https://doi.org/10.1002/ecs2.4686](https://doi.org/10.1002/ecs2.4686).
-- Fer, Istem, Anthony K. Gardella, Alexey N. Shiklomanov, Eleanor E. Campbell, Elizabeth M. Cowdery, Martin G. De Kauwe, Ankur Desai, et al. “Beyond Ecosystem Modeling: A Roadmap to Community Cyberinfrastructure for Ecological Data-Model Integration.” Global Change Biology 27, no. 1 (2021): 13–26. [https://doi.org/10.1111/gcb.15409](https://doi.org/10.1111/gcb.15409).
-- Hendry, Andrew P. “Prediction in Ecology and Evolution.” BioScience 73, no. 11 (December 19, 2023): 785–99. [https://doi.org/10.1093/biosci/biad083](https://doi.org/10.1093/biosci/biad083).
-- Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. “The FAIR Guiding Principles for Scientific Data Management and Stewardship.” Scientific Data 3, no. 1 (March 15, 2016): 160018. [https://doi.org/10.1038/sdata.2016.18](https://doi.org/10.1038/sdata.2016.18).

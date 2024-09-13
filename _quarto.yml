@@ -25,7 +25,10 @@ website:
     left:
       - sidebar:workshop-summary
       - sidebar:reference
-
+    right: 
+      - icon: github
+        href: https://github.com/eco4cast/efi-ci-workshop-2024
+      
   sidebar:
     - id: workshop-summary
       title: "Workshop Summary"
@@ -33,11 +36,14 @@ website:
       background: light
       collapse-level: 2
       contents:
+        - workshopsummary/index.qmd
         - workshopsummary/summary.qmd
         - workshopsummary/brief.qmd
 
     - id: reference
       title: "Reference"
       contents:
+        - reference/index.qmd
         - reference/EFI_CI_reference.qmd
+        - reference/participants.qmd
 

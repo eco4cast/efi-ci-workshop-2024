@@ -1,0 +1,41 @@
+---
+title: "{{< fa arrow-right >}} Participants"
+format: html
+---
+
+## Named Participants and Affiliations
+
+- **Alexandra Kirk** - NASA IMPACT
+- **Bruce Wilson** - Oak Ridge National Laboratory (ORNL) Distributed Active Archive Center
+- **Caitlin Shanahan** - NERACOOS
+- **Cameron Thompson** - NERACOOS
+- **Carl Boettiger** - University of California Berkeley
+- **Chris Brown** - University of Maryland
+- **Chris Tate** - Red Hat
+- **Clarissa Anderson** - University of California San Diego and SCCOOS
+- **David Scheurer** - NOAA Ocean Service
+- **David Watkins** - USGS
+- **Emily Silva** - NERACOOS
+- **Hassan Moustahfid** - NOAA
+- **Istem Fer** - Finnish Meteorological Institute
+- **Jake Kritzer** - NERACOOS
+- **Jake Zwart** - USGS
+- **Jessica Burnett** - NASA
+- **Jody Peters** - University of Notre Dame
+- **Kelly Knee** - RPS Ocean Science
+- **Marie Colton** - Hydros LLC
+- **Melissa Kenney** - University of Minnesota Institute on the Environment
+- **Mike Dietze** - Boston University
+- **Quinn Thomas** - Virginia Tech
+- **Renato Figueiredo** - University of Florida
+- **Rob Cardeiro** - NERACOOS
+- **Sean Dorr** - University of Minnesota Twin Cities
+- **Tyson Swetnam** - University of Arizona
+
+## Participant Impressions
+
+The workshop participants included a diverse mix of 41 participants from various sectors. Federal agencies were well-represented with 19 participants from 6 different agencies including USGS, NOAA, and NASA. Academia contributed 12 participants from 11 different institutions with international representation from the Finnish Meteorological Institute. The private sector added 5 participants, while NGOs including IOOS regional associations represented the remainder.
+
+According to an exit survey of 28 participants prior to the workshop, the majority of attendees were slightly or moderately knowledgeable of ecological forecasting CI. Around 20% were very knowledgeable, and 7% were not at all knowledgeable. This makeup of participants influenced the scope of the topics covered, focusing more on higher level concepts and general design rather than the technical aspects of cyber infrastructure. Overall, the workshop was well received. It met participants' expectations, with the majority being 'extremely satisfied', although the lack of technical content was noted by several survey respondents.
+
+Reported knowledge gains from the workshop were significant. Participants increased their familiarity with the EFI initiative, NERACOOS, and ecological forecasting cyberinfrastructure in general. There was a strong gain in knowledge about the forecasting cyberinfrastructure of other organizations, increasing from 0% and 11% to 14% and 71% (very knowledgeable and moderately knowledgeable respectively). The strong satisfaction of participants with the workshop was underscored by strong agreement that the workshop facilitated effective collaboration, increased community engagement, and was considered a valuable use of time aligning well with personal goals. Moreover, interactions with workshop organizers and the efficacy of communications were particularly praised. Participants valued the chance to meet peers, learn from diverse CI use cases, and engage in discussions that spanned across multiple perspectives including those focusing on design justice principles. Recommendations for future workshops emphasized a desire for more hands-on experiences with cyberinfrastructure tools, deeper technical discussions, and enhanced skill-building sessions.
