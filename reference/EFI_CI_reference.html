@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Cameron Thompson">
 
-<title>Cyberinfrastructure for Efficient Ecological Forecasting - Reference: Acronyms, Definitions, and People</title>
+<title>Cyberinfrastructure for Efficient Ecological Forecasting -  Acronyms and Definitions</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -41,6 +59,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -93,12 +113,16 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-workshop-summary">    
         <li>
+    <a class="dropdown-item" href="../workshopsummary/index.html" rel="" target="">
+ <span class="dropdown-text">Workshop Summary</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../workshopsummary/summary.html" rel="" target="">
- <span class="dropdown-text">EFI-CI Workshop Summary</span></a>
+ <span class="dropdown-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> EFI-CI Workshop Summary</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../workshopsummary/brief.html" rel="" target="">
- <span class="dropdown-text">EFI-CI Briefing Paper</span></a>
+ <span class="dropdown-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> EFI-CI Briefing Paper</span></a>
   </li>  
     </ul>
   </li>
@@ -108,11 +132,26 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-reference">    
         <li>
+    <a class="dropdown-item" href="../reference/index.html" rel="" target="">
+ <span class="dropdown-text">Reference</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../reference/EFI_CI_reference.html" rel="" target="">
- <span class="dropdown-text">Reference: Acronyms, Definitions, and People</span></a>
+ <span class="dropdown-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Acronyms and Definitions</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reference/participants.html" rel="" target="">
+ <span class="dropdown-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Participants</span></a>
   </li>  
     </ul>
   </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/eco4cast/efi-ci-workshop-2024" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -124,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/EFI_CI_reference.html">Reference: Acronyms, Definitions, and People</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/EFI_CI_reference.html"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Acronyms and Definitions</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -138,8 +177,20 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../reference/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../reference/EFI_CI_reference.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Reference: Acronyms, Definitions, and People</span></a>
+ <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Acronyms and Definitions</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/participants.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Participants</span></a>
   </div>
 </li>
     </ul>
@@ -158,13 +209,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#design-justice-principles" id="toc-design-justice-principles" class="nav-link" data-scroll-target="#design-justice-principles">Design Justice Principles</a></li>
   <li><a href="#care-principles" id="toc-care-principles" class="nav-link" data-scroll-target="#care-principles">CARE Principles</a></li>
   <li><a href="#fair-principles" id="toc-fair-principles" class="nav-link" data-scroll-target="#fair-principles">FAIR Principles</a></li>
-  <li><a href="#adapted-forecasting-and-cyberinfrastructure-terms-from-fer-et.-al-2021" id="toc-adapted-forecasting-and-cyberinfrastructure-terms-from-fer-et.-al-2021" class="nav-link" data-scroll-target="#adapted-forecasting-and-cyberinfrastructure-terms-from-fer-et.-al-2021">Adapted Forecasting and Cyberinfrastructure Terms from Fer et. al 2021</a></li>
-  <li><a href="#adapted-forecasting-and-cyberinfrastructure-terms-from-hendry-et-al.-2023" id="toc-adapted-forecasting-and-cyberinfrastructure-terms-from-hendry-et-al.-2023" class="nav-link" data-scroll-target="#adapted-forecasting-and-cyberinfrastructure-terms-from-hendry-et-al.-2023">Adapted Forecasting and Cyberinfrastructure Terms from Hendry et al.&nbsp;2023</a></li>
+  <li><a href="#adapted-forecasting-and-cyberinfrastructure-terms-from-fer2021beyond" id="toc-adapted-forecasting-and-cyberinfrastructure-terms-from-fer2021beyond" class="nav-link" data-scroll-target="#adapted-forecasting-and-cyberinfrastructure-terms-from-fer2021beyond">Adapted Forecasting and Cyberinfrastructure Terms from <span class="citation" data-cites="fer2021beyond">(Fer et al. 2021)</span></a></li>
+  <li><a href="#adapted-forecasting-and-cyberinfrastructure-terms-from-hendry2023prediction" id="toc-adapted-forecasting-and-cyberinfrastructure-terms-from-hendry2023prediction" class="nav-link" data-scroll-target="#adapted-forecasting-and-cyberinfrastructure-terms-from-hendry2023prediction">Adapted Forecasting and Cyberinfrastructure Terms from <span class="citation" data-cites="hendry2023prediction">(Hendry 2023)</span></a></li>
   </ul></li>
   <li><a href="#other-technical-terminology" id="toc-other-technical-terminology" class="nav-link" data-scroll-target="#other-technical-terminology">Other Technical Terminology</a></li>
-  <li><a href="#named-participants-and-affiliations" id="toc-named-participants-and-affiliations" class="nav-link" data-scroll-target="#named-participants-and-affiliations">Named Participants and Affiliations</a></li>
-  <li><a href="#participant-impressions" id="toc-participant-impressions" class="nav-link" data-scroll-target="#participant-impressions">Participant Impressions</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/eco4cast/efi-ci-workshop-2024/edit/main/reference/EFI_CI_reference.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/eco4cast/efi-ci-workshop-2024/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -173,19 +221,13 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Reference: Acronyms, Definitions, and People</h1>
+<h1 class="title"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Acronyms and Definitions</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Cameron Thompson </p>
-          </div>
-  </div>
     
   
     
@@ -247,6 +289,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="care-principles" class="level3">
 <h3 class="anchored" data-anchor-id="care-principles">CARE Principles</h3>
+<p>From <span class="citation" data-cites="carroll2020care">(<a href="#ref-carroll2020care" role="doc-biblioref">Carroll et al. 2020</a>)</span></p>
 <ul>
 <li><strong>Collective Benefit</strong>
 <ul>
@@ -276,6 +319,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="fair-principles" class="level3">
 <h3 class="anchored" data-anchor-id="fair-principles">FAIR Principles</h3>
+<p>From <span class="citation" data-cites="wilkinson2016fair">(<a href="#ref-wilkinson2016fair" role="doc-biblioref">Wilkinson et al. 2016</a>)</span></p>
 <ul>
 <li><strong>To be Findable</strong>:
 <ul>
@@ -310,8 +354,8 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 </section>
-<section id="adapted-forecasting-and-cyberinfrastructure-terms-from-fer-et.-al-2021" class="level3">
-<h3 class="anchored" data-anchor-id="adapted-forecasting-and-cyberinfrastructure-terms-from-fer-et.-al-2021">Adapted Forecasting and Cyberinfrastructure Terms from Fer et. al 2021</h3>
+<section id="adapted-forecasting-and-cyberinfrastructure-terms-from-fer2021beyond" class="level3">
+<h3 class="anchored" data-anchor-id="adapted-forecasting-and-cyberinfrastructure-terms-from-fer2021beyond">Adapted Forecasting and Cyberinfrastructure Terms from <span class="citation" data-cites="fer2021beyond">(<a href="#ref-fer2021beyond" role="doc-biblioref">Fer et al. 2021</a>)</span></h3>
 <ul>
 <li><strong>Abstraction</strong>: The process of focusing on the design of the IT system architecture and how components relate to one another.</li>
 <li><strong>Accessibility</strong>: Availability of software and data in a public location with complete metadata and the protocols to use, install, implement, and employ them shared.</li>
@@ -339,8 +383,8 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Virtual machines</strong>: Software providing basic OS functionality in a contained environment.</li>
 </ul>
 </section>
-<section id="adapted-forecasting-and-cyberinfrastructure-terms-from-hendry-et-al.-2023" class="level3">
-<h3 class="anchored" data-anchor-id="adapted-forecasting-and-cyberinfrastructure-terms-from-hendry-et-al.-2023">Adapted Forecasting and Cyberinfrastructure Terms from Hendry et al.&nbsp;2023</h3>
+<section id="adapted-forecasting-and-cyberinfrastructure-terms-from-hendry2023prediction" class="level3">
+<h3 class="anchored" data-anchor-id="adapted-forecasting-and-cyberinfrastructure-terms-from-hendry2023prediction">Adapted Forecasting and Cyberinfrastructure Terms from <span class="citation" data-cites="hendry2023prediction">(<a href="#ref-hendry2023prediction" role="doc-biblioref">Hendry 2023</a>)</span></h3>
 <ul>
 <li><strong>Hypothesis</strong>: An expectation on system workings for testable predictions.</li>
 <li><strong>Prediction</strong>: Formal assertion about a state or outcome before it is known.</li>
@@ -381,58 +425,25 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Thredds</strong>: A server that makes it easy to access and share scientific data using common standards.</li>
 <li><strong>Zarr</strong>: A format for efficiently storing large multi-dimensional arrays of data, often used in scientific research.</li>
 </ul>
-</section>
-<section id="named-participants-and-affiliations" class="level2">
-<h2 class="anchored" data-anchor-id="named-participants-and-affiliations">Named Participants and Affiliations</h2>
-<ul>
-<li><strong>Alexandra Kirk</strong> - NASA IMPACT</li>
-<li><strong>Bruce Wilson</strong> - Oak Ridge National Laboratory (ORNL) Distributed Active Archive Center</li>
-<li><strong>Caitlin Shanahan</strong> - NERACOOS</li>
-<li><strong>Cameron Thompson</strong> - NERACOOS</li>
-<li><strong>Carl Boettiger</strong> - University of California Berkeley</li>
-<li><strong>Chris Brown</strong> - University of Maryland</li>
-<li><strong>Chris Tate</strong> - Red Hat</li>
-<li><strong>Clarissa Anderson</strong> - University of California San Diego and SCCOOS</li>
-<li><strong>David Scheurer</strong> - NOAA Ocean Service</li>
-<li><strong>David Watkins</strong> - USGS</li>
-<li><strong>Emily Silva</strong> - NERACOOS</li>
-<li><strong>Hassan Moustahfid</strong> - NOAA</li>
-<li><strong>Istem Fer</strong> - Finnish Meteorological Institute</li>
-<li><strong>Jake Kritzer</strong> - NERACOOS</li>
-<li><strong>Jake Zwart</strong> - USGS</li>
-<li><strong>Jessica Burnett</strong> - NASA</li>
-<li><strong>Jody Peters</strong> - University of Notre Dame</li>
-<li><strong>Kelly Knee</strong> - RPS Ocean Science</li>
-<li><strong>Marie Colton</strong> - Hydros LLC</li>
-<li><strong>Melissa Kenney</strong> - University of Minnesota Institute on the Environment</li>
-<li><strong>Mike Dietze</strong> - Boston University</li>
-<li><strong>Quinn Thomas</strong> - Virginia Tech</li>
-<li><strong>Renato Figueiredo</strong> - University of Florida</li>
-<li><strong>Rob Cardeiro</strong> - NERACOOS</li>
-<li><strong>Sean Dorr</strong> - University of Minnesota Twin Cities</li>
-<li><strong>Tyson Swetnam</strong> - University of Arizona</li>
-</ul>
-</section>
-<section id="participant-impressions" class="level2">
-<h2 class="anchored" data-anchor-id="participant-impressions">Participant Impressions</h2>
-<p>The workshop participants included a diverse mix of 41 participants from various sectors. Federal agencies were well-represented with 19 participants from 6 different agencies including USGS, NOAA, and NASA. Academia contributed 12 participants from 11 different institutions with international representation from the Finnish Meteorological Institute. The private sector added 5 participants, while NGOs including IOOS regional associations represented the remainder.</p>
-<p>According to an exit survey of 28 participants prior to the workshop, the majority of attendees were slightly or moderately knowledgeable of ecological forecasting CI. Around 20% were very knowledgeable, and 7% were not at all knowledgeable. This makeup of participants influenced the scope of the topics covered, focusing more on higher level concepts and general design rather than the technical aspects of cyber infrastructure. Overall, the workshop was well received. It met participants’ expectations, with the majority being ‘extremely satisfied’, although the lack of technical content was noted by several survey respondents.</p>
-<p>Reported knowledge gains from the workshop were significant. Participants increased their familiarity with the EFI initiative, NERACOOS, and ecological forecasting cyberinfrastructure in general. There was a strong gain in knowledge about the forecasting cyberinfrastructure of other organizations, increasing from 0% and 11% to 14% and 71% (very knowledgeable and moderately knowledgeable respectively). The strong satisfaction of participants with the workshop was underscored by strong agreement that the workshop facilitated effective collaboration, increased community engagement, and was considered a valuable use of time aligning well with personal goals. Moreover, interactions with workshop organizers and the efficacy of communications were particularly praised. Participants valued the chance to meet peers, learn from diverse CI use cases, and engage in discussions that spanned across multiple perspectives including those focusing on design justice principles. Recommendations for future workshops emphasized a desire for more hands-on experiences with cyberinfrastructure tools, deeper technical discussions, and enhanced skill-building sessions.</p>
-</section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
-<ul>
-<li>Carroll, Stephanie Russo, Ibrahim Garba, Oscar L. Figueroa-Rodríguez, Jarita Holbrook, Raymond Lovett, Simeon Materechera, Mark Parsons, et al.&nbsp;“The CARE Principles for Indigenous Data Governance.” Data Science Journal 19 (November 4, 2020): 43–43. <a href="https://doi.org/10.5334/dsj-2020-043">https://doi.org/10.5334/dsj-2020-043</a>.</li>
-<li>Dietze, Michael C., R. Quinn Thomas, Jody Peters, Carl Boettiger, Gerbrand Koren, Alexey N. Shiklomanov, and Jaime Ashander. “A Community Convention for Ecological Forecasting: Output Files and Metadata Version 1.0.” Ecosphere 14, no. 11 (2023): e4686. <a href="https://doi.org/10.1002/ecs2.4686">https://doi.org/10.1002/ecs2.4686</a>.</li>
-<li>Fer, Istem, Anthony K. Gardella, Alexey N. Shiklomanov, Eleanor E. Campbell, Elizabeth M. Cowdery, Martin G. De Kauwe, Ankur Desai, et al.&nbsp;“Beyond Ecosystem Modeling: A Roadmap to Community Cyberinfrastructure for Ecological Data-Model Integration.” Global Change Biology 27, no. 1 (2021): 13–26. <a href="https://doi.org/10.1111/gcb.15409">https://doi.org/10.1111/gcb.15409</a>.</li>
-<li>Hendry, Andrew P. “Prediction in Ecology and Evolution.” BioScience 73, no. 11 (December 19, 2023): 785–99. <a href="https://doi.org/10.1093/biosci/biad083">https://doi.org/10.1093/biosci/biad083</a>.</li>
-<li>Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al.&nbsp;“The FAIR Guiding Principles for Scientific Data Management and Stewardship.” Scientific Data 3, no. 1 (March 15, 2016): 160018. <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>.</li>
-</ul>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-carroll2020care" class="csl-entry" role="listitem">
+Carroll, Stephanie, Ibrahim Garba, Oscar Figueroa-Rodrı́guez, Jarita Holbrook, Raymond Lovett, Simeon Materechera, Mark Parsons, et al. 2020. <span>“The CARE Principles for Indigenous Data Governance.”</span> <em>Data Science Journal</em> 19.
+</div>
+<div id="ref-fer2021beyond" class="csl-entry" role="listitem">
+Fer, Istem, Anthony K Gardella, Alexey N Shiklomanov, Eleanor E Campbell, Elizabeth M Cowdery, Martin G De Kauwe, Ankur Desai, et al. 2021. <span>“Beyond Ecosystem Modeling: A Roadmap to Community Cyberinfrastructure for Ecological Data-Model Integration.”</span> <em>Global Change Biology</em> 27 (1): 13–26.
+</div>
+<div id="ref-hendry2023prediction" class="csl-entry" role="listitem">
+Hendry, Andrew P. 2023. <span>“Prediction in Ecology and Evolution.”</span> <em>BioScience</em> 73 (11): 785–99.
+</div>
+<div id="ref-wilkinson2016fair" class="csl-entry" role="listitem">
+Wilkinson, Mark D, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. <span>“The FAIR Guiding Principles for Scientific Data Management and Stewardship.”</span> <em>Scientific Data</em> 3 (1): 1–9.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Cameron Thompson">
 
 <title>Cyberinfrastructure for Efficient Ecological Forecasting</title>
 <style>
@@ -94,6 +93,8 @@ div.csl-indent {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -146,12 +147,16 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-workshop-summary">    
         <li>
+    <a class="dropdown-item" href="./workshopsummary/index.html" rel="" target="">
+ <span class="dropdown-text">Workshop Summary</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="./workshopsummary/summary.html" rel="" target="">
- <span class="dropdown-text">EFI-CI Workshop Summary</span></a>
+ <span class="dropdown-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> EFI-CI Workshop Summary</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./workshopsummary/brief.html" rel="" target="">
- <span class="dropdown-text">EFI-CI Briefing Paper</span></a>
+ <span class="dropdown-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> EFI-CI Briefing Paper</span></a>
   </li>  
     </ul>
   </li>
@@ -161,11 +166,26 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-reference">    
         <li>
+    <a class="dropdown-item" href="./reference/index.html" rel="" target="">
+ <span class="dropdown-text">Reference</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="./reference/EFI_CI_reference.html" rel="" target="">
- <span class="dropdown-text">Reference: Acronyms, Definitions, and People</span></a>
+ <span class="dropdown-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Acronyms and Definitions</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./reference/participants.html" rel="" target="">
+ <span class="dropdown-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Participants</span></a>
   </li>  
     </ul>
   </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/eco4cast/efi-ci-workshop-2024" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -182,8 +202,10 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#efi-cyberinfrastructure-workshop-april-2024" id="toc-efi-cyberinfrastructure-workshop-april-2024" class="nav-link active" data-scroll-target="#efi-cyberinfrastructure-workshop-april-2024">EFI Cyberinfrastructure Workshop April 2024</a></li>
+  <li><a href="#efi-cyberinfrastructure-workshop-april-2024" id="toc-efi-cyberinfrastructure-workshop-april-2024" class="nav-link active" data-scroll-target="#efi-cyberinfrastructure-workshop-april-2024">EFI Cyberinfrastructure Workshop April 2024</a>
+  <ul class="collapse">
   <li><a href="#workshop-outcomes" id="toc-workshop-outcomes" class="nav-link" data-scroll-target="#workshop-outcomes">Workshop Outcomes</a></li>
+  </ul></li>
   <li><a href="#how-to-contribute" id="toc-how-to-contribute" class="nav-link" data-scroll-target="#how-to-contribute">How to Contribute</a>
   <ul class="collapse">
   <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a>
@@ -218,12 +240,6 @@ div.csl-indent {
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Cameron Thompson </p>
-          </div>
-  </div>
     
   
     
@@ -243,15 +259,15 @@ div.csl-indent {
 </li>
 <li><strong>Propose</strong> CI designs for various forecasting problems</li>
 </ol>
-</section>
-<section id="workshop-outcomes" class="level1">
-<h1>Workshop Outcomes</h1>
+<section id="workshop-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="workshop-outcomes">Workshop Outcomes</h2>
 <p>An objective of the workshop was to create an open-access version-controlled online document. This document was envisioned as a community-developed handbook of CI design principles and recommended practices accessible to the workshop participants and the broader Ecological Forecasting Initiative (EFI) community. The living document is to function as a comprehensive CI guide for both novice and experienced forecasters aligned with community-developed forecasting standards <span class="citation" data-cites="dietze2023community">(<a href="#ref-dietze2023community" role="doc-biblioref">Dietze et al. 2023</a>)</span>.</p>
+</section>
 </section>
 <section id="how-to-contribute" class="level1">
 <h1>How to Contribute</h1>
 <p>This repository is a collaborative space for the EFI community to design, discuss, and refine cyberinfrastructure (CI) for ecological forecasting. We welcome contributions from all backgrounds and levels of experience.</p>
-<p>We are using <a href="https://quarto.org/">Quarto</a> and <a href="https://docs.github.com/en/actions">GitHub Actions</a> to manage the deployment of the site. This allows contributors to write pages in <a href="https://www.markdownguide.org/getting-started/">Markdown</a> using familiar tools such as RStudio, Jupyter, or Visual Studio Code - focusing on the substance of the writing rather than worrying about styling or website deployment.</p>
+<p>We use <a href="https://quarto.org/">Quarto</a> and <a href="https://docs.github.com/en/actions">GitHub Actions</a> to streamline the deployment of this site. Contributors can write pages in <a href="https://www.markdownguide.org/getting-started/">Markdown</a> using familiar tools like RStudio, Jupyter, or Visual Studio Code. This approach allows contributors to focus on content creation without worrying about styling or managing the website deployment.</p>
 <section id="getting-started" class="level2">
 <h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
 <section id="prerequisites" class="level3">
@@ -267,7 +283,7 @@ div.csl-indent {
 <h3 class="anchored" data-anchor-id="installation">Installation</h3>
 <ol type="1">
 <li><p><strong>Fork the repository</strong></p>
-<p>Click the “Fork” button at the top right of this page to create a copy of this repository under your GitHub account.</p></li>
+<p>Click the “Fork” button at the top right of the <a href="https://github.com/eco4cast/efi-ci-workshop-2024">efi-ci-workshop-2024 github repository</a> to create a copy of this repository under your GitHub account.</p></li>
 <li><p><strong>Clone your fork</strong></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/YOUR-USERNAME/efi-ci-workshop-2024.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p><strong>Navigate to the repository directory</strong></p>
@@ -285,8 +301,8 @@ div.csl-indent {
 <li><p><strong>Work on your task</strong></p>
 <p>Once you’ve selected an issue or task, start working on it in your forked repository. Make sure to keep your changes focused and relevant to the task at hand.</p></li>
 <li><p><strong>Preview the website</strong></p>
-<p>(Optional) To preview your changes locally, all you need is a quarto installation.</p>
-<p>There are many ways to work with quarto. The Quarto project website has <a href="https://quarto.org/docs/get-started/">specific documentation</a> for how to install quarto for RStudio, Jupyter, VS Code, and more. Once you have quarto installed, you can preview your content in your tool of choice:</p></li>
+<p>(Optional) To preview your changes locally, you’ll need a Quarto installation.</p>
+<p>There are several ways to work with Quarto. The <a href="https://quarto.org/docs/get-started/">Quarto documentation</a> provides detailed instructions on how to install it for RStudio, Jupyter, VS Code, and other tools. Once Quarto is installed, you can easily preview your content using your preferred tool:</p></li>
 </ol>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Shell / Text Editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">VS Code</a></li></ul>
@@ -323,7 +339,7 @@ div.csl-indent {
 </ol>
 <section id="citations" class="level3">
 <h3 class="anchored" data-anchor-id="citations">Citations</h3>
-<p>Citations are just like if you were using bibtex to write a paper. Add your citation to the <code>references.bibtex</code>. Then cite in the page text. For example, you could cite the Ecological Forecasting Standards with markdown like <code>[@dietze2023community]</code> <span class="citation" data-cites="dietze2023community">(<a href="#ref-dietze2023community" role="doc-biblioref">Dietze et al. 2023</a>)</span>. For more information, see the <a href="https://quarto.org/docs/authoring/footnotes-and-citations.html">quarto help page on citations and footnotes</a>.</p>
+<p>Citing sources in Quarto works just like using BibTeX in a research paper. First, add your references to the <code>references.bibtex</code> file. Then, you can cite them directly in the page text. For example, to cite the Ecological Forecasting Standards, you would write <code>[@dietze2023community]</code> which renders as <span class="citation" data-cites="dietze2023community">(<a href="#ref-dietze2023community" role="doc-biblioref">Dietze et al. 2023</a>)</span>. For more information, see the <a href="https://quarto.org/docs/authoring/footnotes-and-citations.html">quarto help page on citations and footnotes</a>.</p>
 </section>
 </section>
 <section id="current-documents" class="level2">
