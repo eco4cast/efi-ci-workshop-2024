@@ -109,21 +109,21 @@
     "href": "index.html",
     "title": "Cyberinfrastructure for Efficient Ecological Forecasting",
     "section": "",
-    "text": "The lack of widely accepted cyberinfrastructure (CI) design principles poses a major obstacle for researchers and organizations seeking to engage in ecological forecasting. In an effort to address these obstacles, a workshop convened forecasting researchers and CI experts from government, academia, industry, and NGOs to:\n\nCollate common CI practices currently used\n\nIdentify CI needs and gaps\n\nPropose CI designs for various forecasting problems\n\n\n\nAn objective of the workshop was to create an open-access version-controlled online document. This document was envisioned as a community-developed handbook of CI design principles and recommended practices accessible to the workshop participants and the broader Ecological Forecasting Initiative (EFI) community. The living document is to function as a comprehensive CI guide for both novice and experienced forecasters aligned with community-developed forecasting standards (Dietze et al. 2023)."
+    "text": "The absence of widely accepted cyberinfrastructure (CI) design principles remains a significant challenge for researchers and organizations involved in ecological forecasting. To tackle these issues, a workshop brought together forecasting researchers and CI experts from government, academia, industry, and NGOs. The key goals of the workshop were to:\n\nCollate commonly used CI practices\n\nIdentify CI needs and gaps\n\nPropose CI designs to address various forecasting challenges\n\n\n\nA primary objective of the workshop was to develop an open-access, version-controlled online document. This document is intended to evolve into a community-driven handbook of CI design principles and best practices, accessible to both workshop participants and the broader Ecological Forecasting Initiative (EFI) community. This living document will serve as a comprehensive CI guide, suitable for both beginners and experienced forecasters, and will align with community-established forecasting standards (Dietze et al. 2023)."
   },
   {
     "objectID": "index.html#workshop-outcomes",
     "href": "index.html#workshop-outcomes",
     "title": "Cyberinfrastructure for Efficient Ecological Forecasting",
     "section": "",
-    "text": "An objective of the workshop was to create an open-access version-controlled online document. This document was envisioned as a community-developed handbook of CI design principles and recommended practices accessible to the workshop participants and the broader Ecological Forecasting Initiative (EFI) community. The living document is to function as a comprehensive CI guide for both novice and experienced forecasters aligned with community-developed forecasting standards (Dietze et al. 2023)."
+    "text": "A primary objective of the workshop was to develop an open-access, version-controlled online document. This document is intended to evolve into a community-driven handbook of CI design principles and best practices, accessible to both workshop participants and the broader Ecological Forecasting Initiative (EFI) community. This living document will serve as a comprehensive CI guide, suitable for both beginners and experienced forecasters, and will align with community-established forecasting standards (Dietze et al. 2023)."
   },
   {
     "objectID": "index.html#getting-started",
     "href": "index.html#getting-started",
     "title": "Cyberinfrastructure for Efficient Ecological Forecasting",
     "section": "Getting Started",
-    "text": "Getting Started\n\nPrerequisites\nBefore you start, you will need:\n\nA GitHub account. You can sign up for one here.\nGit installed on your computer. Follow the instructions here to install Git.\nBasic knowledge of Git and GitHub. If you’re new to these, we recommend this tutorial.\n\n\n\nInstallation\n\nFork the repository\nClick the “Fork” button at the top right of the efi-ci-workshop-2024 github repository to create a copy of this repository under your GitHub account.\nClone your fork\ngit clone https://github.com/YOUR-USERNAME/efi-ci-workshop-2024.git\nNavigate to the repository directory\n cd efi-ci-workshop-2024\nCreate a new branch\ngit checkout -b your-branch-name"
+    "text": "Getting Started\n\nScope\nBegin by reviewing the workshop summary documents to familiarize yourself with the key topics discussed during the 2024 workshop. Additionally, read the briefing paper, which outlines the initial CI design principles covered at the event. We welcome and encourage your comments on these materials.\nWe also invite you to contribute to the ecological forecasting CI handbook, which is currently in development and in need of the most input.\n\n\nPrerequisites\nBefore you start, you will need:\n\nA GitHub account. You can sign up for one here.\nGit installed on your computer. Follow the instructions here to install Git.\nBasic knowledge of Git and GitHub. If you’re new to these, we recommend this tutorial.\n\n\n\nInstallation\n\nFork the repository\nClick the “Fork” button at the top right of the efi-ci-workshop-2024 github repository to create a copy of this repository under your GitHub account.\nClone your fork\ngit clone https://github.com/YOUR-USERNAME/efi-ci-workshop-2024.git\nNavigate to the repository directory\n cd efi-ci-workshop-2024\nCreate a new branch\ngit checkout -b your-branch-name"
   },
   {
     "objectID": "index.html#contributing",
@@ -145,6 +145,20 @@
     "title": "Cyberinfrastructure for Efficient Ecological Forecasting",
     "section": "Organizers and Funders",
     "text": "Organizers and Funders\nThe workshop was co-hosted by EFI and the Northeastern Regional Association for Coastal Ocean Observing Systems (NERACOOS) in Portsmouth, New Hampshire. It was made possible through support from the National Oceanic and Atmospheric Administration/US IOOS, the National Aeronautics and Space Administration, the Northeastern Regional Association of Coastal Ocean Observing Systems, the Ecological Forecasting Initiative, and the U.S. Geological Survey.\nOrganizing Committee: Jake Zwart (USGS), Hassan Moustahfid (NOAA), Chris Brown (University of Maryland), Jessica Burnett (NASA), Jake Kritzer (NERACOOS), Rob Cardeiro (NERACOOS), Cameron Thompson (NERACOOS), Emily Silva (NERACOOS), Caitlin Shanahan (NERACOOS), Jody Peters (University of Notre Dame), Mike Dietze (Boston University)"
+  },
+  {
+    "objectID": "ci_handbook/index.html",
+    "href": "ci_handbook/index.html",
+    "title": "CI Handbook",
+    "section": "",
+    "text": "🚧 Under Construction 🚧"
+  },
+  {
+    "objectID": "ci_handbook/index.html#ci-handbook-documents",
+    "href": "ci_handbook/index.html#ci-handbook-documents",
+    "title": "CI Handbook",
+    "section": "",
+    "text": "🚧 Under Construction 🚧"
   },
   {
     "objectID": "reference/EFI_CI_reference.html",
