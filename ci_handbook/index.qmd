@@ -1,0 +1,15 @@
+---
+title: "CI Handbook"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-position: left
+    comments:
+      utterances:
+         repo: eco4cast/efi-ci-workshop-2024
+---
+
+## CI Handbook Documents
+
+🚧

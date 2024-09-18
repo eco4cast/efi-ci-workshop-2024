@@ -14,16 +14,16 @@ format:
 
 ![](images/DSC_7900.JPG)
 
-The lack of widely accepted cyberinfrastructure (CI) design principles poses a major obstacle for researchers and organizations seeking to engage in ecological forecasting. In an effort to address these obstacles, a workshop convened forecasting researchers and CI experts from government, academia, industry, and NGOs to:
+The absence of widely accepted cyberinfrastructure (CI) design principles remains a significant challenge for researchers and organizations involved in ecological forecasting. To tackle these issues, a workshop brought together forecasting researchers and CI experts from government, academia, industry, and NGOs. The key goals of the workshop were to:
 
-1. **Collate** common CI practices currently used  
+1. **Collate** commonly used CI practices  
 2. **Identify** CI needs and gaps  
-3. **Propose** CI designs for various forecasting problems
+3. **Propose** CI designs to address various forecasting challenges
 
 
 ## Workshop Outcomes
 
-An objective of the workshop was to create an open-access version-controlled online document. This document was envisioned as a community-developed handbook of CI design principles and recommended practices accessible to the workshop participants and the broader Ecological Forecasting Initiative (EFI) community. The living document is to function as a comprehensive CI guide for both novice and experienced forecasters aligned with community-developed forecasting standards [@dietze2023community].
+A primary objective of the workshop was to develop an open-access, version-controlled online document. This document is intended to evolve into a community-driven handbook of CI design principles and best practices, accessible to both workshop participants and the broader Ecological Forecasting Initiative (EFI) community. This living document will serve as a comprehensive CI guide, suitable for both beginners and experienced forecasters, and will align with community-established forecasting standards [@dietze2023community].
 
 # How to Contribute
 
@@ -36,6 +36,12 @@ to focus on content creation without worrying about styling or
 managing the website deployment.
 
 ## Getting Started
+
+### Scope 
+
+Begin by reviewing the [workshop summary documents](workshopsummary/summary.qmd) to familiarize yourself with the key topics discussed during the 2024 workshop. Additionally, read the [briefing paper](workshopsummary/brief.qmd), which outlines the initial CI design principles covered at the event. We welcome and encourage your comments on these materials.
+
+We also invite you to contribute to the ecological forecasting CI handbook, which is currently in development and in need of the most input.
 
 ### Prerequisites
 
