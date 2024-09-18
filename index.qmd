@@ -41,7 +41,7 @@ managing the website deployment.
 
 Begin by reviewing the [workshop summary documents](workshopsummary/summary.qmd) to familiarize yourself with the key topics discussed during the 2024 workshop. Additionally, read the [briefing paper](workshopsummary/brief.qmd), which outlines the initial CI design principles covered at the event. We welcome and encourage your comments on these materials.
 
-We also invite you to contribute to the ecological forecasting CI handbook, which is currently in development and in need of the most input.
+We also invite you to contribute to the [ecological forecasting CI handbook](ci_handbook/index.qmd), which is currently in development and in need of the most input.
 
 ### Prerequisites
 

@@ -24,6 +24,7 @@ website:
     search: true
     left:
       - sidebar:workshop-summary
+      - sidebar:ci-handbook
       - sidebar:reference
     right: 
       - icon: github
@@ -39,6 +40,14 @@ website:
         - workshopsummary/index.qmd
         - workshopsummary/summary.qmd
         - workshopsummary/brief.qmd
+
+    - id: ci-handbook
+      title: "CI Handbook"
+      style: "docked"
+      background: light
+      collapse-level: 2
+      contents:
+        - ci_handbook/index.qmd
 
     - id: reference
       title: "Reference"
