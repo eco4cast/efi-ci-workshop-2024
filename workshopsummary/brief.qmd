@@ -1,5 +1,6 @@
 ---
 title: "{{< fa arrow-right >}} EFI-CI Briefing Paper"
+author: "Cameron Thompson"
 format:
   html:
     toc: true
