@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://projects.ecoforecast.org/efi-ci-workshop-2024/workshopsummary/summary.html</loc>
-    <lastmod>2024-09-19T16:55:12.324Z</lastmod>
-  </url>
-  <url>
-    <loc>https://projects.ecoforecast.org/efi-ci-workshop-2024/workshopsummary/brief.html</loc>
-    <lastmod>2024-09-19T16:55:12.324Z</lastmod>
-  </url>
-  <url>
-    <loc>https://projects.ecoforecast.org/efi-ci-workshop-2024/reference/index.html</loc>
-    <lastmod>2024-09-19T16:55:12.323Z</lastmod>
-  </url>
-  <url>
-    <loc>https://projects.ecoforecast.org/efi-ci-workshop-2024/index.html</loc>
-    <lastmod>2024-09-19T16:55:12.323Z</lastmod>
-  </url>
-  <url>
-    <loc>https://projects.ecoforecast.org/efi-ci-workshop-2024/ci_handbook/index.html</loc>
-    <lastmod>2024-09-19T16:55:12.304Z</lastmod>
-  </url>
-  <url>
-    <loc>https://projects.ecoforecast.org/efi-ci-workshop-2024/reference/EFI_CI_reference.html</loc>
-    <lastmod>2024-09-19T16:55:12.323Z</lastmod>
-  </url>
-  <url>
-    <loc>https://projects.ecoforecast.org/efi-ci-workshop-2024/reference/participants.html</loc>
-    <lastmod>2024-09-19T16:55:12.323Z</lastmod>
+    <lastmod>2024-09-26T19:45:14.165Z</lastmod>
   </url>
   <url>
     <loc>https://projects.ecoforecast.org/efi-ci-workshop-2024/workshopsummary/index.html</loc>
-    <lastmod>2024-09-19T16:55:12.324Z</lastmod>
+    <lastmod>2024-09-26T19:45:14.164Z</lastmod>
+  </url>
+  <url>
+    <loc>https://projects.ecoforecast.org/efi-ci-workshop-2024/reference/participants.html</loc>
+    <lastmod>2024-09-26T19:45:14.164Z</lastmod>
+  </url>
+  <url>
+    <loc>https://projects.ecoforecast.org/efi-ci-workshop-2024/reference/EFI_CI_reference.html</loc>
+    <lastmod>2024-09-26T19:45:14.164Z</lastmod>
+  </url>
+  <url>
+    <loc>https://projects.ecoforecast.org/efi-ci-workshop-2024/ci_handbook/index.html</loc>
+    <lastmod>2024-09-26T19:45:14.144Z</lastmod>
+  </url>
+  <url>
+    <loc>https://projects.ecoforecast.org/efi-ci-workshop-2024/index.html</loc>
+    <lastmod>2024-09-26T19:45:14.163Z</lastmod>
+  </url>
+  <url>
+    <loc>https://projects.ecoforecast.org/efi-ci-workshop-2024/reference/index.html</loc>
+    <lastmod>2024-09-26T19:45:14.164Z</lastmod>
+  </url>
+  <url>
+    <loc>https://projects.ecoforecast.org/efi-ci-workshop-2024/workshopsummary/brief.html</loc>
+    <lastmod>2024-09-26T19:45:14.164Z</lastmod>
+  </url>
+  <url>
+    <loc>https://projects.ecoforecast.org/efi-ci-workshop-2024/workshopsummary/report.html</loc>
+    <lastmod>2024-09-26T19:45:14.164Z</lastmod>
   </url>
 </urlset>
