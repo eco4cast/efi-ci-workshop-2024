@@ -1,6 +1,6 @@
 ---
 title: "{{< fa arrow-right >}} EFI-CI Briefing Paper"
-author: "Cameron Thompson"
+author: "Cameron Thompson, Jacob Zwart, Jake Kritzer, Chris Brown, Jessica Burnett, Mike Dietze, Jody Peters, Hassan Moustahfid"
 format:
   html:
     toc: true
