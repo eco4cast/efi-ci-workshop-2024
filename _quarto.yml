@@ -40,6 +40,7 @@ website:
         - workshopsummary/index.qmd
         - workshopsummary/summary.qmd
         - workshopsummary/brief.qmd
+        - workshopsummary/report.qmd
 
     - id: ci-handbook
       title: "CI Handbook"
