@@ -153,6 +153,9 @@ To close a preview session press `Ctrl+C` on PC or `Cmd+C` on a mac.
 
    You can tag someone in particular to review the content you're proposing to add; if you don't tag anyone in particular, one of the repository maintainers will review your PR. 
 
+### Images 
+Images can greatly enhance your content, but it's important to keep file sizes manageable to avoid slowing down the website. Aim to keep image sizes under 1-2 MB—smaller is even better. You can adjust image size and quality using various open-source tools like [GIMP](https://docs.gimp.org/en/gimp-tutorial-quickie-jpeg.html).
+
 ### Citations
 
 Citing sources in Quarto works just like using BibTeX in a research paper.
