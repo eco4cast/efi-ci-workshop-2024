@@ -231,6 +231,7 @@ div.csl-indent {
   </ul></li>
   <li><a href="#contributing" id="toc-contributing" class="nav-link" data-scroll-target="#contributing">Contributing</a>
   <ul class="collapse">
+  <li><a href="#images" id="toc-images" class="nav-link" data-scroll-target="#images">Images</a></li>
   <li><a href="#citations" id="toc-citations" class="nav-link" data-scroll-target="#citations">Citations</a></li>
   </ul></li>
   <li><a href="#current-documents" id="toc-current-documents" class="nav-link" data-scroll-target="#current-documents">Current documents</a></li>
@@ -353,6 +354,10 @@ div.csl-indent {
 <li><p><strong>Get a review</strong></p>
 <p>You can tag someone in particular to review the content you’re proposing to add; if you don’t tag anyone in particular, one of the repository maintainers will review your PR.</p></li>
 </ol>
+<section id="images" class="level3">
+<h3 class="anchored" data-anchor-id="images">Images</h3>
+<p>Images can greatly enhance your content, but it’s important to keep file sizes manageable to avoid slowing down the website. We’re using ImageMagick in GitHub Actions to automatically reduce image sizes if the images committed to the repository are larger than 1MB.</p>
+</section>
 <section id="citations" class="level3">
 <h3 class="anchored" data-anchor-id="citations">Citations</h3>
 <p>Citing sources in Quarto works just like using BibTeX in a research paper. First, add your references to the <code>references.bibtex</code> file. Then, you can cite them directly in the page text. For example, to cite the Ecological Forecasting Standards, you would write <code>[@dietze2023community]</code> which renders as <span class="citation" data-cites="dietze2023community">(<a href="#ref-dietze2023community" role="doc-biblioref">Dietze et al. 2023</a>)</span>. For more information, see the <a href="https://quarto.org/docs/authoring/footnotes-and-citations.html">quarto help page on citations and footnotes</a>.</p>
