@@ -20,6 +20,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        ref: main
     
     - name: Check for large image files
       id: large-img-check
@@ -57,7 +59,7 @@ jobs:
           git config user.email github-actions@github.com
           git add --all
           git commit --allow-empty -m "[auto] Reduce image file size"
-          git push
+          git push origin HEAD:main
 
 
     
