@@ -43,7 +43,7 @@ jobs:
         img_path: ${{ steps.large-img-check.outputs.img_path }}
       run: |
         for image in $img_path; do
-          mogrify -resize 800x800 -quality 75 "$image"
+          mogrify -resize 800 -quality 75 "$image"
         done
       #   Body width in Quarto documents is 800 px by default
       #   https://quarto.org/docs/output-formats/page-layout.html#html-page-layout
