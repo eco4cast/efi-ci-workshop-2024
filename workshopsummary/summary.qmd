@@ -63,7 +63,7 @@ In the Q&A, they discussed strategies for expanding user testing as demands evol
 
 ### Design Justice Principles Activity
 
-![](images/DSC_7778.JPG)
+![](../images/DSC_7778.JPG)
 
 In the Design Justice Principles activity session, participants worked in small groups to apply design justice principles to a specific goal: creating cyberinfrastructure that supports workflows for communities with limited Internet access. The activity had two parts:
 
@@ -84,7 +84,7 @@ The activity helped participants start orienting their thinking around design ju
 
 ### State-of-the-art Workflows and Best Practices Presentations
 
-![](images/DSC_7935.JPG)
+![](../images/DSC_7935.JPG)
 
 #### Istem Fer - "What could an operational agricultural forecasting CI look like? Field Observatory Network (FiON) model-data workflows and services"
 
@@ -148,7 +148,7 @@ Their wish list includes plug-and-play instrument integration, expanded regional
 
 #### Quinn Thomas and Carl Boettiger - "Adventures from a million forecast march: community driven-CI for ecological forecasting"
 
-![](images/DSC_7923.JPG)
+![](../images/DSC_7923.JPG)
 
 **Carl Boettiger** started with principles for designing cyberinfrastructure to make it easier to integrate the explosion of ecological data and forecasting methods. Key points included:
 
@@ -232,7 +232,7 @@ Kirk emphasized the importance of VEDA's open modular design in enabling collabo
 
 ### Workflows and Best Practices Breakout Group Discussions
 
-![](images/DSC_7938.JPG)
+![](../images/DSC_7938.JPG)
 
 Based on a comprehensive review of the breakout session notes, report-outs, and the broader context provided by the workshop presentations, several key themes, tensions, and challenges emerged regarding the current state and future development of ecological forecasting workflows.
 
@@ -325,7 +325,7 @@ While not all groups engaged deeply with the design justice principles presented
 
 ### Lunch Presentations
 
-![](images/DSC_7786.JPG)
+![](../images/DSC_7786.JPG)
 
 #### Chris Tate's - "PEcAn to the Cloud"
 
@@ -366,7 +366,7 @@ While not all groups engaged deeply with the design justice principles presented
 
 ### Breakout Group Discussions - Synthesize Common Gaps, Barriers, and Other Challenges and Strategies for Overcoming Them
 
-![](images/DSC_7947.JPG)
+![](../images/DSC_7947.JPG)
 
 #### Diversity of Forecasting Needs
 
@@ -562,7 +562,7 @@ While not all groups engaged deeply with the design justice principles presented
 
 ### Breakout Group Discussions - Implementation and Coordination by Organizations and Agencies
 
-![](images/DSC_7940.JPG)
+![](../images/DSC_7940.JPG)
 
 #### Group 1
 
