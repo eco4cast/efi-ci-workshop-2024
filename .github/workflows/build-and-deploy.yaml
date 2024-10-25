@@ -9,11 +9,61 @@ on:
       - main  
   workflow_dispatch:
 
+env:
+  GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+
 jobs:
-  build-deploy:
+  reduce-images:
     runs-on: ubuntu-latest
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Check for large image files
+      id: large-img-check
+      run: |
+        img_path=$(du -ah --threshold=1M | awk '/.(JPE?G|jpe?g|PNG|png|HEIC|heic)$/ {print $2}')
+        echo "$img_path"
+        if [[ -n "$img_path" ]]; then
+          echo "big_image=true" >> $GITHUB_OUTPUT
+          echo "img_path=$(echo $img_path)" >> $GITHUB_OUTPUT
+        fi
+    - name: Install ImageMagick
+      if: steps.large-img-check.outputs.big_image == 'true'
+      run: |
+        cd ..
+        wget https://imagemagick.org/archive/binaries/magick -o magick
+        chmod +x magick
+
+    - name: Shrink images
+      if: steps.large-img-check.outputs.big_image == 'true'
+      env:
+        img_path: ${{ steps.large-img-check.outputs.img_path }}
+      run: |
+        for image in $img_path; do
+          mogrify -resize 800 -quality 75 "$image"
+        done
+      #   Body width in Quarto documents is 800 px by default
+      #   https://quarto.org/docs/output-formats/page-layout.html#html-page-layout
+      #   ImageMagick mogrify docs: https://imagemagick.org/script/mogrify.php
+    
+    
+    - name: Push changes
+      if: steps.large-img-check.outputs.big_image == 'true'
+      run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add --all
+          git commit --allow-empty -m "[auto] Reduce image file size"
+          git push
+
+
+    
+  build-deploy:
+    needs: reduce-images
+    runs-on: ubuntu-latest
     container: eco4cast/rocker-neon4cast:latest
       
     steps:
