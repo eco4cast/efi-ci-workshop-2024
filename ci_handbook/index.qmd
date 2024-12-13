@@ -8,8 +8,13 @@ format:
     comments:
       utterances:
          repo: eco4cast/efi-ci-workshop-2024
+listing: 
+  contents: 
+    - "model-output-standards.qmd"
+  fields: [image, title, reading-time] 
+  sort: "title desc" 
+  type: grid
 ---
 
-## CI Handbook Documents
 
 :construction: Under Construction :construction: 

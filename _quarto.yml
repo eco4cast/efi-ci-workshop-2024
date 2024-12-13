@@ -49,6 +49,7 @@ website:
       collapse-level: 2
       contents:
         - ci_handbook/index.qmd
+        - ci_handbook/model-output-standards.qmd
 
     - id: reference
       title: "Reference"

@@ -1,0 +1,45 @@
+---
+title: "{{< fa arrow-right >}} Model Output Standards"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-position: left
+reading-time: true
+image: "../images/Lego_dimensions.svg.png"
+---
+
+## Importance of Standardizing Model Output
+
+Agreed-upon model standards and conventions, such as variable names and data structures, are essential for achieving model interoperability and developing shared, reusable tools. Establishing these conventions enhance data consistency, facilitate dissemination, and support efficient data analysis. 
+
+By leveraging existing community standards and conventions within the broader modeling community, researchers can enhance engagement and make their products more valuable to a wider audience. **We recommend adopting the model output standard described by [@dietze2023community] for all ecological forecasts**. As a community-driven convention, contributions to further develop and improve this standard are highly encouraged. 
+
+## Model Output Standards
+
+The model output standards outlined by [@dietze2023community] build upon the Climate and Forecast ([CF](http://cfconventions.org/)) conventions [@eaton2003netcdf] and Cooperative Ocean/Atmosphere Research Data Service ([COARDS](https://ferret.pmel.noaa.gov/noaa_coop/coop_cdf_profile.html)) conventions. 
+
+For all model output, the recommended order of dimensions should be T, Z, Y, X, U, where:
+
+- **T**: Time
+- **Z**: Vertical dimension
+- **Y**: Latitude
+- **X**: Longitude
+- **U**: Uncertainty (e.g., ensemble member or summary statistic)
+
+The following dimension names should be used as listed in order to describe T, Z, Y, X, U: 
+
+| Dimension          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *reference_datetime*  | **REQUIRED**. ISO 8601 ([ISO, 2019](https://www.iso.org/standard/70907.html)) datetime the forecast starts from (aka issue time). Datetimes are allowed to be earlier than the *reference_datetime* if a reanalysis/reforecast is run before the start of the forecast period. |
+| *datetime*           | **REQUIRED**. ISO 8601 ([ISO, 2019](https://www.iso.org/standard/70907.html)) datetime being predicted and follows [CF convention](http://cfconventions.org/cf-conventions/cf-conventions.html#time-coordinate).                                                                                           |
+| *duration*           | **REQUIRED**. Specifies the time step of the prediction. Use `P1D` for a daily prediction, `P1W` for a weekly prediction, and `PT30M` for a 30-minute prediction. The format should adhere to [ISO 8601 duration](https://en.wikipedia.org/wiki/ISO_8601#Durations).         |
+| *depth* or *height*    | **REQUIRED IF STORING MULTIPLE Z DIMENSIONS**. No single standard name for the Z dimension. Where possible, use [CF conventions](https://cfconventions.org/cf-conventions/cf-conventions.html#vertical-coordinate) for vertical dimension names and attributes.                                                                                                                                            |
+| *lat* or *Y*          | **REQUIRED IF PREDICTING ON GRID**. Latitude (units = `degrees_north`).                                                                                                                                                                                                       |
+| *lon* or *X*          | **REQUIRED IF PREDICTING ON GRID**. Longitude (units = `degrees_east`) is the default spatial coordinate. The alternative use of Y, X for spatial coordinates should conform to the CF convention and requires additional metadata about grids and projections.                                                                                                                                                                                                                                          |
+| *site_id*           | **REQUIRED IF NOT PREDICTING ON A GRID**. For predictions that are not on a spatial grid, use a site dimension that maps to a more detailed geometry (points, polygons, etc.). *site_id* should be used when making predictions that map to a stream network geofabric, for example.                                                                                                                                                                                                              |
+| *family*             | **REQUIRED**. Describes the distribution of the prediction (e.g., `normal` for a normal distribution). For ensemble predictions, use `ensemble`. If the predictions yield a single realization (i.e., there is no associated uncertainty), it is preferred to specify `ensemble` with the ensemble size set to 1. If this dimension remains constant, it is acceptable to define *family* as a variable attribute, provided that the file format supports this (e.g., netCDF). Refer to [appendix S1](https://esajournals.onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fecs2.4686&file=ecs24686-sup-0001-AppendixS1.pdf) of [@dietze2023community] for supported _family_ and _parameter_ names.                                                                                   |
+| *parameter*          | **REQUIRED**. For ensemble predictions, specify integers from `1` to `Ne` (where `Ne` represents the total size of the ensemble). For named distributions, indicate the parameter or statistic being specified (e.g., `mean`, `sigma`).                                                                                                                                                                                                                                         |
+| *variable*           | **REQUIRED**. Standardized variable name of what is being predicted. We recommend using [CSDMS Standard Names](https://csdms.colorado.edu/wiki/CSDMS_Standard_Names). For example, maximum stream temperature would be named `channel_water_surface_water__max_of_temperature`. However, existing widely-used variable names (e.g., `max_temp_c`) are also acceptable.                                                                                                   |
+| *prediction*        | **REQUIRED**. Predicted value for the parameter in the *parameter* column.                                                                                                                                                                                                                                                                                                                                                                                                       |
+
