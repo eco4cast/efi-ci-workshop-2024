@@ -11,6 +11,12 @@ format:
 listing: 
   contents: 
     - "model-output-standards.qmd"
+    - "design_justice.qmd" 
+    - "workflow_design.qmd" 
+    - "modularity.qmd" 
+    - "data_format.qmd" 
+    - "cloud_computing.qmd" 
+    - "continuous_integration.qmd" 
   fields: [image, title, reading-time] 
   sort: "title desc" 
   type: grid

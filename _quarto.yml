@@ -50,6 +50,12 @@ website:
       contents:
         - ci_handbook/index.qmd
         - ci_handbook/model-output-standards.qmd
+        - ci_handbook/design_justice.qmd
+        - ci_handbook/workflow_design.qmd
+        - ci_handbook/modularity.qmd 
+        - ci_handbook/data_format.qmd
+        - ci_handbook/cloud_computing.qmd 
+        - ci_handbook/continuous_integration.qmd
 
     - id: reference
       title: "Reference"
