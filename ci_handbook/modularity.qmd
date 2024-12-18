@@ -1,0 +1,12 @@
+---
+title: "{{< fa arrow-right >}} Modularity"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-position: left
+reading-time: true
+image: "../images/hive.jpg"
+---
+
+:construction: Under Construction :construction: 

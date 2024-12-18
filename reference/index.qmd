@@ -8,9 +8,13 @@ format:
     comments:
       utterances:
          repo: eco4cast/efi-ci-workshop-2024
+listing: 
+  contents: 
+    - "EFI_CI_reference.qmd"
+    - "participants.qmd" 
+  fields: [image, title, reading-time] 
+  sort: "title desc" 
+  type: grid
 ---
-## Reference Documents
 
-* [Acronyms and Definitions](EFI_CI_reference.qmd)
-* [Participants](participants.qmd)
 

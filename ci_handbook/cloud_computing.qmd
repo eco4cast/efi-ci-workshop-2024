@@ -1,0 +1,12 @@
+---
+title: "{{< fa arrow-right >}} Cloud Computing"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-position: left
+reading-time: true
+image: "../images/cloud_computing.jpg"
+---
+
+:construction: Under Construction :construction: 

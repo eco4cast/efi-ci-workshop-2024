@@ -8,6 +8,7 @@ format:
     comments:
       utterances:
          repo: eco4cast/efi-ci-workshop-2024
+image: "../images/acronyms.png" 
 ---
 
 ## Acronyms and Abbreviations
