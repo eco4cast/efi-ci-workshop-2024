@@ -56,6 +56,7 @@ website:
         - ci_handbook/data_standards.qmd
         - ci_handbook/cloud_computing.qmd 
         - ci_handbook/continuous_integration.qmd
+        - ci_handbook/example.qmd
 
     - id: reference
       title: "Reference"
