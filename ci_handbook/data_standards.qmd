@@ -1,5 +1,5 @@
 ---
-title: "{{< fa arrow-right >}} Data Format"
+title: "{{< fa arrow-right >}} Data Standards"
 format:
   html:
     toc: true

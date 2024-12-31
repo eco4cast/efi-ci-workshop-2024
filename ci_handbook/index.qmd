@@ -14,7 +14,7 @@ listing:
     - "design_justice.qmd" 
     - "workflow_design.qmd" 
     - "modularity.qmd" 
-    - "data_format.qmd" 
+    - "data_standards.qmd" 
     - "cloud_computing.qmd" 
     - "continuous_integration.qmd" 
   fields: [image, title, reading-time] 
