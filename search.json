@@ -98,16 +98,79 @@
     "text": "Other Technical Terminology\n\nCloud-native architecture: A way of designing applications specifically to run on cloud platforms, making them easy to scale, flexible, and built from smaller, interchangeable parts.\nContainerization: A method of packaging software so it can run consistently across different computing environments.\nDocker: A popular platform for containerization that simplifies creating, deploying, and running applications by using containers.\nEvent-driven workflow: A system where actions are triggered by specific events like a sensor sending data, often used in cloud computing to automate processes.\nFairweather Report: A 2003 report by the National Academies Press on improving the provision of civilian weather and climate services.\nI/O (Input/Output): Communication between a computer system and the outside world, involving receiving (input) and sending (output) data.\nKerchunk: A software tool that helps organize and store data efficiently in the cloud.\nLoosely-coupled interfaces: Connections between software systems that are designed to interact with each other with minimal dependency, making it easier to update or change parts without affecting the whole system.\nModular architecture: A design approach that builds a system from separate, interchangeable parts, making it easier to update and maintain.\nObject storage: A method of storing data in the cloud where each piece of data is stored as a distinct unit or “object” along with its associated metadata.\nOpenShift: A commercial cloud-based platform by Red Hat that helps developers build and manage containerized applications.\nProvenance tracking: Keeping detailed records of where data comes from and all the steps it goes through, ensuring data integrity and traceability.\nReproducible compute environments: Setups for running software that can be exactly replicated, ensuring that the same code always produces the same results, often using container technologies like Docker.\nServerless computing: A cloud service model where the cloud provider manages the servers, allowing developers to run code without worrying about server maintenance.\nSTAC (SpatioTemporal Asset Catalog): A standard that helps organize and share spatiotemporal data.\nStack Catalog: A specification for organizing and searching metadata about spatiotemporal data, making it easier to find and share such data.\nThredds: A server that makes it easy to access and share scientific data using common standards.\nZarr: A format for efficiently storing large multi-dimensional arrays of data, often used in scientific research."
   },
   {
-    "objectID": "ci_handbook/index.html",
-    "href": "ci_handbook/index.html",
-    "title": "CI Handbook",
+    "objectID": "ci_handbook/workflow_design.html",
+    "href": "ci_handbook/workflow_design.html",
+    "title": " Workflow Design",
     "section": "",
     "text": "🚧 Under Construction 🚧"
   },
   {
-    "objectID": "ci_handbook/index.html#ci-handbook-documents",
-    "href": "ci_handbook/index.html#ci-handbook-documents",
+    "objectID": "ci_handbook/model-output-standards.html",
+    "href": "ci_handbook/model-output-standards.html",
+    "title": " Model Output Standards",
+    "section": "",
+    "text": "Agreed-upon model standards and conventions, such as variable names and data structures, are essential for achieving model interoperability and developing shared, reusable tools. Establishing these conventions enhance data consistency, facilitate dissemination, and support efficient data analysis.\nBy leveraging existing community standards and conventions within the broader modeling community, researchers can enhance engagement and make their products more valuable to a wider audience. We recommend adopting the model output standard described by (Dietze et al. 2023) for all ecological forecasts. As a community-driven convention, contributions to further develop and improve this standard are highly encouraged."
+  },
+  {
+    "objectID": "ci_handbook/model-output-standards.html#importance-of-standardizing-model-output",
+    "href": "ci_handbook/model-output-standards.html#importance-of-standardizing-model-output",
+    "title": " Model Output Standards",
+    "section": "",
+    "text": "Agreed-upon model standards and conventions, such as variable names and data structures, are essential for achieving model interoperability and developing shared, reusable tools. Establishing these conventions enhance data consistency, facilitate dissemination, and support efficient data analysis.\nBy leveraging existing community standards and conventions within the broader modeling community, researchers can enhance engagement and make their products more valuable to a wider audience. We recommend adopting the model output standard described by (Dietze et al. 2023) for all ecological forecasts. As a community-driven convention, contributions to further develop and improve this standard are highly encouraged."
+  },
+  {
+    "objectID": "ci_handbook/model-output-standards.html#model-output-standards",
+    "href": "ci_handbook/model-output-standards.html#model-output-standards",
+    "title": " Model Output Standards",
+    "section": "Model Output Standards",
+    "text": "Model Output Standards\nThe model output standards outlined by (Dietze et al. 2023) build upon the Climate and Forecast (CF) conventions (Eaton et al. 2003) and Cooperative Ocean/Atmosphere Research Data Service (COARDS) conventions.\nFor all model output, the recommended order of dimensions should be T, Z, Y, X, U, where:\n\nT: Time\nZ: Vertical dimension\nY: Latitude\nX: Longitude\nU: Uncertainty (e.g., ensemble member or summary statistic)\n\nThe following dimension names should be used as listed in order to describe T, Z, Y, X, U:\n\n\n\nDimension\nDescription\n\n\n\n\nreference_datetime\nREQUIRED. ISO 8601 (ISO, 2019) datetime the forecast starts from (aka issue time). Datetimes are allowed to be earlier than the reference_datetime if a reanalysis/reforecast is run before the start of the forecast period.\n\n\ndatetime\nREQUIRED. ISO 8601 (ISO, 2019) datetime being predicted and follows CF convention.\n\n\nduration\nREQUIRED. Specifies the time step of the prediction. Use P1D for a daily prediction, P1W for a weekly prediction, and PT30M for a 30-minute prediction. The format should adhere to ISO 8601 duration.\n\n\ndepth or height\nREQUIRED IF STORING MULTIPLE Z DIMENSIONS. No single standard name for the Z dimension. Where possible, use CF conventions for vertical dimension names and attributes.\n\n\nlat or Y\nREQUIRED IF PREDICTING ON GRID. Latitude (units = degrees_north).\n\n\nlon or X\nREQUIRED IF PREDICTING ON GRID. Longitude (units = degrees_east) is the default spatial coordinate. The alternative use of Y, X for spatial coordinates should conform to the CF convention and requires additional metadata about grids and projections.\n\n\nsite_id\nREQUIRED IF NOT PREDICTING ON A GRID. For predictions that are not on a spatial grid, use a site dimension that maps to a more detailed geometry (points, polygons, etc.). site_id should be used when making predictions that map to a stream network geofabric, for example.\n\n\nfamily\nREQUIRED. Describes the distribution of the prediction (e.g., normal for a normal distribution). For ensemble predictions, use ensemble. If the predictions yield a single realization (i.e., there is no associated uncertainty), it is preferred to specify ensemble with the ensemble size set to 1. If this dimension remains constant, it is acceptable to define family as a variable attribute, provided that the file format supports this (e.g., netCDF). Refer to appendix S1 of (Dietze et al. 2023) for supported family and parameter names.\n\n\nparameter\nREQUIRED. For ensemble predictions, specify integers from 1 to Ne (where Ne represents the total size of the ensemble). For named distributions, indicate the parameter or statistic being specified (e.g., a normal distribution would have mean and sigma as the values in the parameter column).\n\n\nvariable\nREQUIRED. Standardized variable name of what is being predicted. We recommend using CSDMS Standard Names. For example, maximum stream temperature would be named channel_water_surface_water__max_of_temperature. However, existing widely-used variable names (e.g., max_temp_c) are also acceptable.\n\n\nprediction\nREQUIRED. Predicted value for the parameter in the parameter column. For an ensemble forecast, the value is the prediction for the ensemble member. For a distribution forecast, the value corresponds to the parameter associated with the distribution in the parameter column."
+  },
+  {
+    "objectID": "ci_handbook/example.html",
+    "href": "ci_handbook/example.html",
+    "title": " Example Forecast CI",
+    "section": "",
+    "text": "🚧 Under Construction 🚧"
+  },
+  {
+    "objectID": "ci_handbook/data_standards.html",
+    "href": "ci_handbook/data_standards.html",
+    "title": " Data Standards",
+    "section": "",
+    "text": "🚧 Under Construction 🚧"
+  },
+  {
+    "objectID": "ci_handbook/cloud_computing.html",
+    "href": "ci_handbook/cloud_computing.html",
+    "title": " Cloud Computing",
+    "section": "",
+    "text": "🚧 Under Construction 🚧"
+  },
+  {
+    "objectID": "ci_handbook/continuous_integration.html",
+    "href": "ci_handbook/continuous_integration.html",
+    "title": " Continuous Integration & Delivery",
+    "section": "",
+    "text": "🚧 Under Construction 🚧"
+  },
+  {
+    "objectID": "ci_handbook/design_justice.html",
+    "href": "ci_handbook/design_justice.html",
+    "title": " Design Justice",
+    "section": "",
+    "text": "🚧 Under Construction 🚧"
+  },
+  {
+    "objectID": "ci_handbook/index.html",
+    "href": "ci_handbook/index.html",
     "title": "CI Handbook",
+    "section": "",
+    "text": "🚧 Under Construction 🚧\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Workflow Design\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n Modularity\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n Model Output Standards\n\n\n15 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n Example Forecast CI\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n Design Justice\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n Data Standards\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n Continuous Integration & Delivery\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n Cloud Computing\n\n\n1 min\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "ci_handbook/modularity.html",
+    "href": "ci_handbook/modularity.html",
+    "title": " Modularity",
     "section": "",
     "text": "🚧 Under Construction 🚧"
   },
@@ -158,14 +221,7 @@
     "href": "reference/index.html",
     "title": "Reference",
     "section": "",
-    "text": "Acronyms and Definitions\nParticipants"
-  },
-  {
-    "objectID": "reference/index.html#reference-documents",
-    "href": "reference/index.html#reference-documents",
-    "title": "Reference",
-    "section": "",
-    "text": "Acronyms and Definitions\nParticipants"
+    "text": "Participants\n\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n Acronyms and Definitions\n\n\n8 min\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "workshopsummary/brief.html",

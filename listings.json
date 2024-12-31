@@ -1,0 +1,22 @@
+[
+  {
+    "listing": "/ci_handbook/index.html",
+    "items": [
+      "/ci_handbook/workflow_design.html",
+      "/ci_handbook/modularity.html",
+      "/ci_handbook/model-output-standards.html",
+      "/ci_handbook/example.html",
+      "/ci_handbook/design_justice.html",
+      "/ci_handbook/data_standards.html",
+      "/ci_handbook/continuous_integration.html",
+      "/ci_handbook/cloud_computing.html"
+    ]
+  },
+  {
+    "listing": "/reference/index.html",
+    "items": [
+      "/reference/participants.html",
+      "/reference/EFI_CI_reference.html"
+    ]
+  }
+]

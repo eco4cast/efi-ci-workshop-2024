@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Cyberinfrastructure for Efficient Ecological Forecasting - Reference</title>
+<title>Cyberinfrastructure for Efficient Ecological Forecasting -  Model Output Standards</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -31,8 +50,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../images/EFI_Logo-1.jpg" rel="icon" type="image/jpeg">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,38 +86,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -224,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/index.html">Reference</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ci_handbook/model-output-standards.html"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Model Output Standards</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -238,20 +224,56 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Reference</span></a>
+  <a href="../ci_handbook/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CI Handbook</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/EFI_CI_reference.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Acronyms and Definitions</span></a>
+  <a href="../ci_handbook/model-output-standards.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Model Output Standards</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/participants.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Participants</span></a>
+  <a href="../ci_handbook/design_justice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Design Justice</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ci_handbook/workflow_design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Workflow Design</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ci_handbook/modularity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Modularity</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ci_handbook/data_standards.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Data Standards</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ci_handbook/cloud_computing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Cloud Computing</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ci_handbook/continuous_integration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Continuous Integration &amp; Delivery</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ci_handbook/example.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Example Forecast CI</span></a>
   </div>
 </li>
     </ul>
@@ -260,14 +282,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#importance-of-standardizing-model-output" id="toc-importance-of-standardizing-model-output" class="nav-link active" data-scroll-target="#importance-of-standardizing-model-output">Importance of Standardizing Model Output</a></li>
+  <li><a href="#model-output-standards" id="toc-model-output-standards" class="nav-link" data-scroll-target="#model-output-standards">Model Output Standards</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/eco4cast/efi-ci-workshop-2024/edit/main/ci_handbook/model-output-standards.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/eco4cast/efi-ci-workshop-2024/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Reference</h1>
+<h1 class="title"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Model Output Standards</h1>
 </div>
 
 
@@ -282,51 +311,90 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="importance-of-standardizing-model-output" class="level2">
+<h2 class="anchored" data-anchor-id="importance-of-standardizing-model-output">Importance of Standardizing Model Output</h2>
+<p>Agreed-upon model standards and conventions, such as variable names and data structures, are essential for achieving model interoperability and developing shared, reusable tools. Establishing these conventions enhance data consistency, facilitate dissemination, and support efficient data analysis.</p>
+<p>By leveraging existing community standards and conventions within the broader modeling community, researchers can enhance engagement and make their products more valuable to a wider audience. <strong>We recommend adopting the model output standard described by <span class="citation" data-cites="dietze2023community">(<a href="#ref-dietze2023community" role="doc-biblioref">Dietze et al. 2023</a>)</span> for all ecological forecasts</strong>. As a community-driven convention, contributions to further develop and improve this standard are highly encouraged.</p>
+</section>
+<section id="model-output-standards" class="level2">
+<h2 class="anchored" data-anchor-id="model-output-standards">Model Output Standards</h2>
+<p>The model output standards outlined by <span class="citation" data-cites="dietze2023community">(<a href="#ref-dietze2023community" role="doc-biblioref">Dietze et al. 2023</a>)</span> build upon the Climate and Forecast (<a href="http://cfconventions.org/">CF</a>) conventions <span class="citation" data-cites="eaton2003netcdf">(<a href="#ref-eaton2003netcdf" role="doc-biblioref">Eaton et al. 2003</a>)</span> and Cooperative Ocean/Atmosphere Research Data Service (<a href="https://ferret.pmel.noaa.gov/noaa_coop/coop_cdf_profile.html">COARDS</a>) conventions.</p>
+<p>For all model output, the recommended order of dimensions should be T, Z, Y, X, U, where:</p>
+<ul>
+<li><strong>T</strong>: Time</li>
+<li><strong>Z</strong>: Vertical dimension</li>
+<li><strong>Y</strong>: Latitude</li>
+<li><strong>X</strong>: Longitude</li>
+<li><strong>U</strong>: Uncertainty (e.g., ensemble member or summary statistic)</li>
+</ul>
+<p>The following dimension names should be used as listed in order to describe T, Z, Y, X, U:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Dimension</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em>reference_datetime</em></td>
+<td><strong>REQUIRED</strong>. ISO 8601 (<a href="https://www.iso.org/standard/70907.html">ISO, 2019</a>) datetime the forecast starts from (aka issue time). Datetimes are allowed to be earlier than the <em>reference_datetime</em> if a reanalysis/reforecast is run before the start of the forecast period.</td>
+</tr>
+<tr class="even">
+<td><em>datetime</em></td>
+<td><strong>REQUIRED</strong>. ISO 8601 (<a href="https://www.iso.org/standard/70907.html">ISO, 2019</a>) datetime being predicted and follows <a href="http://cfconventions.org/cf-conventions/cf-conventions.html#time-coordinate">CF convention</a>.</td>
+</tr>
+<tr class="odd">
+<td><em>duration</em></td>
+<td><strong>REQUIRED</strong>. Specifies the time step of the prediction. Use <code>P1D</code> for a daily prediction, <code>P1W</code> for a weekly prediction, and <code>PT30M</code> for a 30-minute prediction. The format should adhere to <a href="https://en.wikipedia.org/wiki/ISO_8601#Durations">ISO 8601 duration</a>.</td>
+</tr>
+<tr class="even">
+<td><em>depth</em> or <em>height</em></td>
+<td><strong>REQUIRED IF STORING MULTIPLE Z DIMENSIONS</strong>. No single standard name for the Z dimension. Where possible, use <a href="https://cfconventions.org/cf-conventions/cf-conventions.html#vertical-coordinate">CF conventions</a> for vertical dimension names and attributes.</td>
+</tr>
+<tr class="odd">
+<td><em>lat</em> or <em>Y</em></td>
+<td><strong>REQUIRED IF PREDICTING ON GRID</strong>. Latitude (units = <code>degrees_north</code>).</td>
+</tr>
+<tr class="even">
+<td><em>lon</em> or <em>X</em></td>
+<td><strong>REQUIRED IF PREDICTING ON GRID</strong>. Longitude (units = <code>degrees_east</code>) is the default spatial coordinate. The alternative use of Y, X for spatial coordinates should conform to the CF convention and requires additional metadata about grids and projections.</td>
+</tr>
+<tr class="odd">
+<td><em>site_id</em></td>
+<td><strong>REQUIRED IF NOT PREDICTING ON A GRID</strong>. For predictions that are not on a spatial grid, use a site dimension that maps to a more detailed geometry (points, polygons, etc.). <em>site_id</em> should be used when making predictions that map to a stream network geofabric, for example.</td>
+</tr>
+<tr class="even">
+<td><em>family</em></td>
+<td><strong>REQUIRED</strong>. Describes the distribution of the prediction (e.g., <code>normal</code> for a normal distribution). For ensemble predictions, use <code>ensemble</code>. If the predictions yield a single realization (i.e., there is no associated uncertainty), it is preferred to specify <code>ensemble</code> with the ensemble size set to 1. If this dimension remains constant, it is acceptable to define <em>family</em> as a variable attribute, provided that the file format supports this (e.g., netCDF). Refer to <a href="https://esajournals.onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fecs2.4686&amp;file=ecs24686-sup-0001-AppendixS1.pdf">appendix S1</a> of <span class="citation" data-cites="dietze2023community">(<a href="#ref-dietze2023community" role="doc-biblioref">Dietze et al. 2023</a>)</span> for supported <em>family</em> and <em>parameter</em> names.</td>
+</tr>
+<tr class="odd">
+<td><em>parameter</em></td>
+<td><strong>REQUIRED</strong>. For ensemble predictions, specify integers from <code>1</code> to <code>Ne</code> (where <code>Ne</code> represents the total size of the ensemble). For named distributions, indicate the parameter or statistic being specified (e.g., a normal distribution would have <code>mean</code> and <code>sigma</code> as the values in the <em>parameter</em> column).</td>
+</tr>
+<tr class="even">
+<td><em>variable</em></td>
+<td><strong>REQUIRED</strong>. Standardized variable name of what is being predicted. We recommend using <a href="https://csdms.colorado.edu/wiki/CSDMS_Standard_Names">CSDMS Standard Names</a>. For example, maximum stream temperature would be named <code>channel_water_surface_water__max_of_temperature</code>. However, existing widely-used variable names (e.g., <code>max_temp_c</code>) are also acceptable.</td>
+</tr>
+<tr class="odd">
+<td><em>prediction</em></td>
+<td><strong>REQUIRED</strong>. Predicted value for the parameter in the <em>parameter</em> column. For an ensemble forecast, the value is the prediction for the ensemble member. For a distribution forecast, the value corresponds to the parameter associated with the distribution in the <em>parameter</em> column.</td>
+</tr>
+</tbody>
+</table>
 
 
 
+</section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1735673808858" data-listing-reading-time-sort="3">
-<a href="../reference/participants.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="../images/DSC_7900.JPG" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Participants
-</h5>
-<div class="listing-reading-time card-text text-muted">
-3 min
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-dietze2023community" class="csl-entry" role="listitem">
+Dietze, Michael C, R Quinn Thomas, Jody Peters, Carl Boettiger, Gerbrand Koren, Alexey N Shiklomanov, and Jaime Ashander. 2023. <span>“A Community Convention for Ecological Forecasting: Output Files and Metadata Version 1.0.”</span> <em>Ecosphere</em> 14 (11): e4686.
 </div>
+<div id="ref-eaton2003netcdf" class="csl-entry" role="listitem">
+Eaton, Brian, Jonathan Gregory, Bob Drach, Karl Taylor, Steve Hankin, John Caron, Rich Signell, et al. 2003. <span>“NetCDF Climate and Forecast (CF) Metadata Conventions.”</span> <em>URL: Http://Cfconventions. Org/Data/Cf-Conventions/Cf-Conventions-1.8/Cf-Conventions. Pdf</em>.
 </div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1735673808858" data-listing-reading-time-sort="8">
-<a href="../reference/EFI_CI_reference.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="../images/acronyms.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Acronyms and Definitions
-</h5>
-<div class="listing-reading-time card-text text-muted">
-8 min
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -624,11 +692,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<script src="https://utteranc.es/client.js" repo="eco4cast/efi-ci-workshop-2024" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
-</script>
 </div> <!-- /content -->
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/eco4cast/efi-ci-workshop-2024/edit/main/reference/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/eco4cast/efi-ci-workshop-2024/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>
+</body></html>

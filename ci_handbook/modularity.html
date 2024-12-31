@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Cyberinfrastructure for Efficient Ecological Forecasting - Reference</title>
+<title>Cyberinfrastructure for Efficient Ecological Forecasting -  Modularity</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../images/EFI_Logo-1.jpg" rel="icon" type="image/jpeg">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,38 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -224,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/index.html">Reference</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ci_handbook/modularity.html"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Modularity</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -238,20 +205,56 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Reference</span></a>
+  <a href="../ci_handbook/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CI Handbook</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/EFI_CI_reference.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Acronyms and Definitions</span></a>
+  <a href="../ci_handbook/model-output-standards.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Model Output Standards</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/participants.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Participants</span></a>
+  <a href="../ci_handbook/design_justice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Design Justice</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ci_handbook/workflow_design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Workflow Design</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ci_handbook/modularity.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Modularity</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ci_handbook/data_standards.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Data Standards</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ci_handbook/cloud_computing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Cloud Computing</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ci_handbook/continuous_integration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Continuous Integration &amp; Delivery</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ci_handbook/example.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Example Forecast CI</span></a>
   </div>
 </li>
     </ul>
@@ -267,7 +270,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Reference</h1>
+<h1 class="title"><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Modularity</h1>
 </div>
 
 
@@ -282,51 +285,11 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p><span class="emoji" data-emoji="construction">🚧</span> Under Construction <span class="emoji" data-emoji="construction">🚧</span></p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1735673808858" data-listing-reading-time-sort="3">
-<a href="../reference/participants.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="../images/DSC_7900.JPG" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Participants
-</h5>
-<div class="listing-reading-time card-text text-muted">
-3 min
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1735673808858" data-listing-reading-time-sort="8">
-<a href="../reference/EFI_CI_reference.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="../images/acronyms.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Acronyms and Definitions
-</h5>
-<div class="listing-reading-time card-text text-muted">
-8 min
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -624,11 +587,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<script src="https://utteranc.es/client.js" repo="eco4cast/efi-ci-workshop-2024" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
-</script>
 </div> <!-- /content -->
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/eco4cast/efi-ci-workshop-2024/edit/main/reference/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/eco4cast/efi-ci-workshop-2024/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/eco4cast/efi-ci-workshop-2024/edit/main/ci_handbook/modularity.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/eco4cast/efi-ci-workshop-2024/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>
