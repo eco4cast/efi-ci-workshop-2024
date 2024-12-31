@@ -8,8 +8,20 @@ format:
     comments:
       utterances:
          repo: eco4cast/efi-ci-workshop-2024
+listing: 
+  contents: 
+    - "model-output-standards.qmd"
+    - "design_justice.qmd" 
+    - "workflow_design.qmd" 
+    - "modularity.qmd" 
+    - "data_standards.qmd" 
+    - "cloud_computing.qmd" 
+    - "continuous_integration.qmd" 
+    - "example.qmd" 
+  fields: [image, title, reading-time] 
+  sort: "title desc" 
+  type: grid
 ---
 
-## CI Handbook Documents
 
 :construction: Under Construction :construction: 

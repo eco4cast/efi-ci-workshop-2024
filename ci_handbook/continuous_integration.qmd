@@ -1,0 +1,12 @@
+---
+title: "{{< fa arrow-right >}} Continuous Integration & Delivery"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-position: left
+reading-time: true
+image: "../images/gitlab_cicd.png"
+---
+
+:construction: Under Construction :construction: 
