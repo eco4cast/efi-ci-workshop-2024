@@ -11,38 +11,40 @@ format:
 image: "../images/DSC_7900.JPG"
 ---
 
-## Named Participants and Affiliations
+<!-- Commenting out given current vibes of U.S. fed gov't  -->
+<!-- ## Named Participants and Affiliations -->
 
-- **Alexandra Kirk** - NASA IMPACT
-- **Bruce Wilson** - Oak Ridge National Laboratory (ORNL) Distributed Active Archive Center
-- **Caitlin Shanahan** - NERACOOS
-- **Cameron Thompson** - NERACOOS
-- **Carl Boettiger** - University of California Berkeley
-- **Chris Brown** - University of Maryland
-- **Chris Tate** - Red Hat
-- **Clarissa Anderson** - University of California San Diego and SCCOOS
-- **David Scheurer** - NOAA Ocean Service
-- **David Watkins** - USGS
-- **Emily Silva** - NERACOOS
-- **Hassan Moustahfid** - NOAA
-- **Istem Fer** - Finnish Meteorological Institute
-- **Jake Kritzer** - NERACOOS
-- **Jake Zwart** - USGS
-- **Jessica Burnett** - NASA
-- **Jody Peters** - University of Notre Dame
-- **Kelly Knee** - RPS Ocean Science
-- **Marie Colton** - Hydros LLC
-- **Melissa Kenney** - University of Minnesota Institute on the Environment
-- **Mike Dietze** - Boston University
-- **Quinn Thomas** - Virginia Tech
-- **Renato Figueiredo** - University of Florida
-- **Rob Cardeiro** - NERACOOS
-- **Sean Dorr** - University of Minnesota Twin Cities
-- **Tyson Swetnam** - University of Arizona
+<!-- - **Alexandra Kirk** - NASA IMPACT -->
+<!-- - **Bruce Wilson** - Oak Ridge National Laboratory (ORNL) Distributed Active Archive Center -->
+<!-- - **Caitlin Shanahan** - NERACOOS -->
+<!-- - **Cameron Thompson** - NERACOOS -->
+<!-- - **Carl Boettiger** - University of California Berkeley -->
+<!-- - **Chris Brown** - University of Maryland -->
+<!-- - **Chris Tate** - Red Hat -->
+<!-- - **Clarissa Anderson** - University of California San Diego and SCCOOS -->
+<!-- - **David Scheurer** - NOAA Ocean Service -->
+<!-- - **David Watkins** - USGS -->
+<!-- - **Emily Silva** - NERACOOS -->
+<!-- - **Hassan Moustahfid** - NOAA -->
+<!-- - **Istem Fer** - Finnish Meteorological Institute -->
+<!-- - **Jake Kritzer** - NERACOOS -->
+<!-- - **Jake Zwart** - USGS -->
+<!-- - **Jessica Burnett** - NASA -->
+<!-- - **Jody Peters** - University of Notre Dame -->
+<!-- - **Kelly Knee** - RPS Ocean Science -->
+<!-- - **Marie Colton** - Hydros LLC -->
+<!-- - **Melissa Kenney** - University of Minnesota Institute on the Environment -->
+<!-- - **Mike Dietze** - Boston University -->
+<!-- - **Quinn Thomas** - Virginia Tech -->
+<!-- - **Renato Figueiredo** - University of Florida -->
+<!-- - **Rob Cardeiro** - NERACOOS -->
+<!-- - **Sean Dorr** - University of Minnesota Twin Cities -->
+<!-- - **Tyson Swetnam** - University of Arizona -->
 
 ## Participant Impressions
 
-The workshop participants included a diverse mix of 41 participants from various sectors. Federal agencies were well-represented with 19 participants from 6 different agencies including USGS, NOAA, and NASA. Academia contributed 12 participants from 11 different institutions with international representation from the Finnish Meteorological Institute. The private sector added 5 participants, while NGOs including IOOS regional associations represented the remainder.
+<!-- Commenting out given current vibes of U.S. fed gov't  -->
+<!-- The workshop participants included a diverse mix of 41 participants from various sectors. Federal agencies were well-represented with 19 participants from 6 different agencies including USGS, NOAA, and NASA. Academia contributed 12 participants from 11 different institutions with international representation from the Finnish Meteorological Institute. The private sector added 5 participants, while NGOs including IOOS regional associations represented the remainder. -->
 
 According to an exit survey of 28 participants prior to the workshop, the majority of attendees were slightly or moderately knowledgeable of ecological forecasting CI. Around 20% were very knowledgeable, and 7% were not at all knowledgeable. This makeup of participants influenced the scope of the topics covered, focusing more on higher level concepts and general design rather than the technical aspects of cyber infrastructure. Overall, the workshop was well received. It met participants' expectations, with the majority being 'extremely satisfied', although the lack of technical content was noted by several survey respondents.
 

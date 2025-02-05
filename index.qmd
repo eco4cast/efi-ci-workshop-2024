@@ -172,9 +172,10 @@ footnotes](https://quarto.org/docs/authoring/footnotes-and-citations.html).
 * [Workshop Summary](workshopsummary/index.qmd) <!-- Link to the summary -->
 * [Reference Documents](reference/index.qmd) <!-- Link to the appendix -->
 
-## Organizers and Funders
+<!-- Commenting out given current vibes of U.S. fed gov't  -->
+<!-- ## Organizers and Funders -->
 
-The workshop was co-hosted by EFI and the Northeastern Regional Association for Coastal Ocean Observing Systems (NERACOOS) in Portsmouth, New Hampshire. It was made possible through support from the National Oceanic and Atmospheric Administration/US IOOS, the National Aeronautics and Space Administration, the Northeastern Regional Association of Coastal Ocean Observing Systems, the Ecological Forecasting Initiative, and the U.S. Geological Survey.
+<!-- The workshop was co-hosted by EFI and the Northeastern Regional Association for Coastal Ocean Observing Systems (NERACOOS) in Portsmouth, New Hampshire. It was made possible through support from the National Oceanic and Atmospheric Administration/US IOOS, the National Aeronautics and Space Administration, the Northeastern Regional Association of Coastal Ocean Observing Systems, the Ecological Forecasting Initiative, and the U.S. Geological Survey. -->
 
-**Organizing Committee**: Jake Zwart (USGS), Hassan Moustahfid (NOAA), Chris Brown (University of Maryland), Jessica Burnett (NASA), Jake Kritzer (NERACOOS), Rob Cardeiro (NERACOOS), Cameron Thompson (NERACOOS), Emily Silva (NERACOOS), Caitlin Shanahan (NERACOOS), Jody Peters (University of Notre Dame), Mike Dietze (Boston University)
+<!-- **Organizing Committee**: Jake Zwart (USGS), Hassan Moustahfid (NOAA), Chris Brown (University of Maryland), Jessica Burnett (NASA), Jake Kritzer (NERACOOS), Rob Cardeiro (NERACOOS), Cameron Thompson (NERACOOS), Emily Silva (NERACOOS), Caitlin Shanahan (NERACOOS), Jody Peters (University of Notre Dame), Mike Dietze (Boston University) -->
 

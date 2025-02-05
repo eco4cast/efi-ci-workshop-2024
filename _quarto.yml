@@ -38,7 +38,8 @@ website:
       collapse-level: 2
       contents:
         - workshopsummary/index.qmd
-        - workshopsummary/summary.qmd
+        ### Commenting out given current vibes of U.S. fed gov't  ###
+        # - workshopsummary/summary.qmd
         - workshopsummary/brief.qmd
         - workshopsummary/report.qmd
 
